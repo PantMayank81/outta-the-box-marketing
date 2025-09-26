@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://outtatheboxmarketing.com/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://outtatheboxmarketing.com/assets/images/Colorful Brain Digital World Technology Logo.png</image:loc>
+            <image:title>Outta The Box Marketing - AI Marketing Consultant India</image:title>
+            <image:caption>Leading AI-powered digital marketing consultant in India</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Core Pages -->
+    <url>
+        <loc>https://outtatheboxmarketing.com/about.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/case-studies.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/blog.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/contact.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Service-Specific Pages -->
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/strategy-consulting/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/technology-automation/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/content-creative/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/performance-analytics/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/specialized-ai/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Location Pages -->
+    <url>
+        <loc>https://outtatheboxmarketing.com/locations/mumbai/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/locations/delhi/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/locations/bangalore/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/locations/pune/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/locations/hyderabad/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/locations/chennai/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://outtatheboxmarketing.com/blog-ai-consultant-vs-traditional.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/blog-marketing-automation-cost.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/blog-performance-marketing-audit.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/blog-hire-digital-marketing-strategist.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/blog-ai-marketing-agency-pricing.html</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Industry-Specific Service Pages -->
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/strategy-consulting/fashion-beauty/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/strategy-consulting/electronics-gadgets/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/strategy-consulting/food-beverage/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/technology-automation/fashion-beauty/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/technology-automation/electronics-gadgets/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://outtatheboxmarketing.com/services/technology-automation/food-beverage/</loc>
+        <lastmod>2025-01-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>
+
+
+

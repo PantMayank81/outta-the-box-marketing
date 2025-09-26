@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Outta The Box Marketing | AI-Powered Digital Marketing Solutions</title>
+    <meta name="description" content="Comprehensive digital marketing services including AI-powered automation, SEO, PPC, and growth hacking. Transform your D2C brand with data-driven strategies.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        deepblue: '#0A2540',
+                        teal: '#008080',
+                        coral: '#FF6F3C',
+                        charcoal: '#333333',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Dropdown animations */
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .dropdown:hover .dropdown-menu,
+        .dropdown-menu.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Service card hover effects */
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Icon animations */
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Filter buttons */
+        .filter-btn {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .filter-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .filter-btn:hover::before {
+            left: 100%;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #008080, #FF6F3C);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Masonry layout for varied content */
+        .masonry-grid {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .masonry-grid {
+                column-count: 1;
+            }
+        }
+
+        /* Loading states */
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* Accessibility improvements */
+        .service-card:focus {
+            outline: 3px solid #008080;
+            outline-offset: 2px;
+        }
+
+        .filter-btn:focus {
+            outline: 2px solid #008080;
+            outline-offset: 2px;
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #008080, #FF6F3C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Pricing badge */
+        .pricing-badge {
+            background: linear-gradient(135deg, #008080, #FF6F3C);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        /* CTA button effects */
+        .cta-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 128, 128, 0.3);
+        }
+
+        /* PNG Image Container Styling */
+        .service-image-container {
+            width: 100%;
+            height: 120px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 128, 128, 0.05) 0%, rgba(255, 111, 60, 0.05) 100%);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-image-container:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(10, 37, 64, 0.15);
+        }
+
+        .service-image-container .service-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+            border: none;
+            border-radius: 16px;
+            /* PNG-specific optimizations */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+
+        .service-image-container:hover .service-icon {
+            transform: scale(1.05);
+        }
+
+        /* Ensure PNG transparency is handled properly */
+        .service-image-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            z-index: -1;
+            border-radius: 16px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .service-image-container {
+                height: 100px;
+                border-radius: 12px;
+            }
+            
+            .service-image-container::before {
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-image-container {
+                height: 80px;
+                border-radius: 8px;
+            }
+            
+            .service-image-container::before {
+                border-radius: 8px;
+            }
+        }
+
+        /* Loading state for PNG images */
+        .service-icon[loading="lazy"] {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-icon[loading="lazy"].loaded,
+        .service-icon:not([loading="lazy"]) {
+            opacity: 1;
+        }
+
+        /* Fallback styling for missing PNG images */
+        .service-icon[src*=".png"] {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .service-icon[src*=".png"]:not([alt=""]):before {
+            content: attr(alt);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+            padding: 8px;
+            display: none;
+        }
+
+        .service-icon[src*=".png"]:error:before {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+
+    <!-- Enhanced Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-deepblue/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-[80px]">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="assets/images/Colorful Brain Digital World Technology Logo.png" alt="Outta The Box Marketing Logo" class="h-[62px] w-auto group-hover:scale-105 transition-transform duration-300">
+                <div class="text-deepblue dark:text-white font-bold text-2xl group-hover:text-teal transition-colors duration-300 text-center">
+                  <div>Outta the box</div>
+                  <div>Marketing</div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Home</a>
+                
+                <!-- Services Dropdown -->
+                <div class="dropdown relative">
+                    <button class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium flex items-center space-x-1 bg-transparent border-none cursor-pointer">
+                        <span>Services</span>
+                        <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu absolute top-full left-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 py-2">
+                        <a href="services.html" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200 border-b border-gray-200 dark:border-gray-700">
+                            <div class="font-semibold text-teal">View All Services</div>
+                            <div class="text-sm text-gray-500">Complete services overview</div>
+                        </a>
+                        <a href="services.html#strategy" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+                            <div class="font-semibold">Digital Marketing Strategy & Consulting</div>
+                            <div class="text-sm text-gray-500">Data-driven marketing strategies</div>
+                        </a>
+                        <a href="services.html#automation" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+                            <div class="font-semibold">AI-Powered Marketing Automation</div>
+                            <div class="text-sm text-gray-500">Intelligent automation systems</div>
+                        </a>
+                        <a href="services.html#content" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+                            <div class="font-semibold">SEO & Content Marketing</div>
+                            <div class="text-sm text-gray-500">Compelling brand storytelling</div>
+                        </a>
+                        <a href="services.html#ppc" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+                            <div class="font-semibold">PPC & Paid Media Management</div>
+                            <div class="text-sm text-gray-500">Performance-driven advertising</div>
+                        </a>
+                        <a href="services.html#technology" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+                            <div class="font-semibold">Marketing Technology Integration</div>
+                            <div class="text-sm text-gray-500">Seamless tech stack integration</div>
+                        </a>
+                        <a href="services.html#growth" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+                            <div class="font-semibold">Growth Hacking & Conversion Optimization</div>
+                            <div class="text-sm text-gray-500">ROI measurement & optimization</div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">About</a>
+                <a href="case-studies.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Case Studies</a>
+                <a href="blog.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Blog</a>
+                <a href="contact.html" class="bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    Let's Talk Growth
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button & Dark Mode -->
+            <div class="flex items-center space-x-3">
+                <button id="darkModeToggle" class="p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+                    <span class="text-lg">🌙</span>
+                </button>
+                
+                <button id="mobileMenuToggle" class="lg:hidden p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden fixed top-[80px] right-0 w-80 h-full bg-white dark:bg-gray-800 shadow-2xl border-l border-gray-200 dark:border-gray-700 transform translate-x-full transition-transform duration-300">
+            <div class="p-6 space-y-6">
+                <a href="index.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Home</a>
+                <a href="about.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">About</a>
+                <a href="services.html" class="block text-teal font-medium text-lg">Services</a>
+                <a href="case-studies.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Case Studies</a>
+                <a href="blog.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Blog</a>
+                <a href="contact.html" class="block w-full bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-bold text-center hover:shadow-lg transition-all duration-300">
+                    Let's Talk Growth
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 mt-[80px] bg-gradient-to-br from-deepblue via-deepblue/90 to-teal/20 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    AI-Powered <span class="gradient-text">Digital Marketing</span><br>
+                    Services That Convert
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8">
+                    Transform your D2C brand with data-driven strategies, AI-powered automation, and proven growth hacking techniques that deliver measurable ROI.
+                </p>
+                
+                <!-- Social Proof Stats -->
+                <div class="flex flex-wrap justify-center items-center gap-8 mb-12 text-white">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-teal">300%</div>
+                        <div class="text-sm text-white/80">Average ROI Increase</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-coral">48h</div>
+                        <div class="text-sm text-white/80">Product Sellout</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-teal">$10M+</div>
+                        <div class="text-sm text-white/80">Ad Spend Managed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Filter -->
+    <section class="py-8 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <button class="filter-btn active px-6 py-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-teal hover:text-white transition-all duration-300" data-filter="all">
+                    All Services
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-teal hover:text-white transition-all duration-300" data-filter="strategy">
+                    Strategy & Consulting
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-teal hover:text-white transition-all duration-300" data-filter="automation">
+                    AI & Automation
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-teal hover:text-white transition-all duration-300" data-filter="growth">
+                    Growth & Optimization
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="servicesGrid">
+                
+                <!-- Digital Marketing Strategy & Consulting -->
+                <div id="strategy" class="service-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="strategy">
+                    <div class="pricing-badge">Starting from ₹50K</div>
+                    <div class="service-image-container mb-6">
+                        <img src="assets/images/Digital Marketing Strategy & Consulting.png" alt="Marketing strategist developing comprehensive digital strategies with AI-powered frameworks" loading="lazy" class="service-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Digital Marketing Strategy & Consulting</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Comprehensive data-driven strategies that align with your business objectives and deliver measurable ROI through strategic frameworks.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-8">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>SMART goal setting with revenue attribution</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Customer persona development & journey mapping</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Multi-channel strategy optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Competitive positioning & differentiation</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Timeline: 4-8 weeks</span>
+                        <a href="contact.html" class="cta-button bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-300">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AI-Powered Marketing Automation -->
+                <div id="automation" class="service-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="automation" style="animation-delay: 0.1s;">
+                    <div class="pricing-badge">Starting from ₹75K</div>
+                    <div class="service-image-container mb-6">
+                        <img src="assets/images/AI-Powered Marketing Automation.png" alt="Automation expert building intelligent marketing workflows with AI assistance" loading="lazy" class="service-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">AI-Powered Marketing Automation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Transform marketing operations with intelligent automation systems that nurture leads, engage customers, and drive conversions 24/7.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-8">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Platform selection & setup (HubSpot, Marketo, Klaviyo)</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>AI-powered lead scoring & personalization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Workflow automation for complete customer lifecycle</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Performance tracking & optimization</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Timeline: 6-12 weeks</span>
+                        <a href="contact.html" class="cta-button bg-gradient-to-r from-coral to-teal text-white px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-300">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SEO & Content Marketing -->
+                <div id="content" class="service-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="strategy" style="animation-delay: 0.2s;">
+                    <div class="pricing-badge">Starting from ₹40K</div>
+                    <div class="service-image-container mb-6">
+                        <img src="assets/images/SEO & Content Marketing.png" alt="Content marketing specialist creating SEO-optimized content with AI-powered research tools" loading="lazy" class="service-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">SEO & Content Marketing</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Drive organic traffic and build brand authority with strategic content marketing and technical SEO optimization.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-8">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Technical SEO audit & optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Content strategy & editorial calendar</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Keyword research & on-page optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Link building & authority development</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Timeline: 3-6 months</span>
+                        <a href="contact.html" class="cta-button bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-300">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PPC & Paid Media Management -->
+                <div id="ppc" class="service-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="growth" style="animation-delay: 0.3s;">
+                    <div class="pricing-badge">Starting from ₹60K</div>
+                    <div class="service-image-container mb-6">
+                        <img src="assets/images/PPC & Paid Media Management.png" alt="Professional marketing specialist managing multiple PPC campaigns with AI-powered optimization tools" loading="lazy" class="service-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">PPC & Paid Media Management</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Maximize your advertising ROI with data-driven PPC campaigns across Google, Facebook, LinkedIn, and other platforms.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-8">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Campaign strategy & budget optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Advanced audience targeting & segmentation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>A/B testing & creative optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Performance tracking & ROI analysis</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Timeline: Ongoing</span>
+                        <a href="contact.html" class="cta-button bg-gradient-to-r from-coral to-teal text-white px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-300">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Marketing Technology Integration -->
+                <div id="technology" class="service-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="automation" style="animation-delay: 0.4s;">
+                    <div class="pricing-badge">Starting from ₹80K</div>
+                    <div class="service-image-container mb-6">
+                        <img src="assets/images/Marketing Technology Integration.png" alt="Marketing technology expert integrating multiple platforms with AI assistance" loading="lazy" class="service-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Marketing Technology Integration</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Build cohesive marketing technology ecosystems that eliminate silos and maximize efficiency through strategic integration.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-8">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>MarTech audit & gap analysis</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Tool selection & procurement support</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>API connections & data synchronization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-teal">✓</span>
+                            <span>Team training & adoption programs</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Timeline: 8-16 weeks</span>
+                        <a href="contact.html" class="cta-button bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-300">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Growth Hacking & Conversion Optimization -->
+                <div id="growth" class="service-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="growth" style="animation-delay: 0.5s;">
+                    <div class="pricing-badge">Starting from ₹70K</div>
+                    <div class="service-image-container mb-6">
+                        <img src="assets/images/Growth Hacking & Conversion Optimization.png" alt="Growth specialist conducting A/B testing and conversion optimization with AI insights" loading="lazy" class="service-icon">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Growth Hacking & Conversion Optimization</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Systematically improve conversion rates through data-driven testing, optimization, and growth hacking techniques.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-8">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Conversion audit & analysis</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>A/B testing & experimentation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Landing page optimization</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-coral">✓</span>
+                            <span>Growth strategy implementation</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Timeline: 3-6 months</span>
+                        <a href="contact.html" class="cta-button bg-gradient-to-r from-coral to-teal text-white px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-lg transition-all duration-300">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    Our Proven <span class="gradient-text">4-Step Process</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    A systematic approach that transforms your marketing from awareness to conversion
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center animate-fade-in">
+                    <div class="w-20 h-20 bg-gradient-to-br from-teal to-teal/80 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Research & Analysis</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Deep dive into your market, competitors, and ideal customers to identify opportunities
+                    </p>
+                </div>
+                <div class="text-center animate-fade-in" style="animation-delay: 0.1s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-coral to-coral/80 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Strategy Development</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Create comprehensive marketing strategies tailored to your specific goals and audience
+                    </p>
+                </div>
+                <div class="text-center animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-teal to-teal/80 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Implementation</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Launch campaigns and content across all relevant channels with precision execution
+                    </p>
+                </div>
+                <div class="text-center animate-fade-in" style="animation-delay: 0.3s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-coral to-coral/80 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Optimize & Scale</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Continuously monitor, analyze, and improve performance for sustainable growth
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-teal via-coral to-teal relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <div class="animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ready to Transform Your Marketing?
+                </h2>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Let's discuss which services are right for your D2C brand and how we can help you achieve your growth goals.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="contact.html" class="bg-white text-teal px-8 py-4 rounded-lg font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                        Get Your Free Marketing Audit
+                    </a>
+                    <a href="case-studies.html" class="border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform">
+                        View Success Stories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="#strategy" class="hover:text-teal transition-colors">Strategy & Consulting</a></li>
+                        <li><a href="#automation" class="hover:text-teal transition-colors">AI & Automation</a></li>
+                        <li><a href="#growth" class="hover:text-teal transition-colors">Growth & Optimization</a></li>
+                        <li><a href="contact.html" class="hover:text-teal transition-colors">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="about.html" class="hover:text-teal transition-colors">About Us</a></li>
+                        <li><a href="case-studies.html" class="hover:text-teal transition-colors">Case Studies</a></li>
+                        <li><a href="blog.html" class="hover:text-teal transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-teal transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="#" class="hover:text-teal transition-colors">Free Marketing Audit</a></li>
+                        <li><a href="#" class="hover:text-teal transition-colors">ROI Calculator</a></li>
+                        <li><a href="#" class="hover:text-teal transition-colors">Growth Guide</a></li>
+                        <li><a href="#" class="hover:text-teal transition-colors">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li><a href="#" class="hover:text-teal transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-teal transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-teal transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-teal transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 dark:border-gray-700 pt-8">
+                <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+                    © 2025 Outta The Box Marketing. All rights reserved. | Privacy Policy | Terms of Service
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const html = document.documentElement;
+        
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            darkModeToggle.querySelector('span').textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+        });
+        
+        // Mobile menu toggle
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        });
+        
+        // Close mobile menu when clicking on links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+
+        // Service filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                // Show/hide service cards based on filter
+                serviceCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .animate-fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Enhanced CTA tracking
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const serviceCard = e.target.closest('.service-card');
+                const serviceName = serviceCard.querySelector('h3').textContent;
+                
+                // Track CTA clicks
+                console.log('Service CTA clicked:', serviceName);
+                
+                // Send to analytics (replace with your analytics code)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'service_cta_click', {
+                        'event_category': 'Services',
+                        'event_label': serviceName,
+                        'value': 1
+                    });
+                }
+            });
+        });
+
+        // Add loading states for better UX
+        function addLoadingState(element) {
+            element.classList.add('loading');
+            setTimeout(() => {
+                element.classList.remove('loading');
+            }, 1000);
+        }
+
+        // Initialize animations on page load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.animate-fade-in').forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+
+        // Enhanced lazy loading for PNG images
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceImages = document.querySelectorAll('.service-icon[loading="lazy"]');
+            
+            // Load images immediately for now to debug
+            serviceImages.forEach(function(img) {
+                img.classList.add('loaded');
+                img.style.opacity = '1';
+                
+                // Handle PNG load errors
+                img.onerror = function() {
+                    console.warn('Failed to load service image:', this.src);
+                    // Fallback to a generic service icon or placeholder
+                    this.style.background = 'linear-gradient(135deg, #008080 0%, #FF6F3C 100%)';
+                    this.style.opacity = '0.3';
+                };
+            });
+            
+            // Check if browser supports IntersectionObserver
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const image = entry.target;
+                            
+                            // Add loaded class for smooth transition
+                            image.classList.add('loaded');
+                            
+                            // Handle PNG loading states
+                            image.onload = function() {
+                                this.style.opacity = '1';
+                            };
+                            
+                            // Stop observing this image
+                            observer.unobserve(image);
+                        }
+                    });
+                }, {
+                    // Load images when they're 50px away from viewport
+                    rootMargin: '50px 0px',
+                    threshold: 0.1
+                });
+
+                serviceImages.forEach(function(img) {
+                    imageObserver.observe(img);
+                });
+            }
+        });
+
+        // Preload critical service images for better UX
+        function preloadServiceImages() {
+            const criticalImages = [
+                'assets/images/Digital Marketing Strategy & Consulting.png',
+                'assets/images/AI-Powered Marketing Automation.png',
+                'assets/images/PPC & Paid Media Management.png'
+            ];
+            
+            criticalImages.forEach(function(src) {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+        }
+
+        // Call preload function
+        preloadServiceImages();
+
+        // Services dropdown functionality
+        function initServicesDropdown() {
+            const servicesButton = document.querySelector('.dropdown button');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+            
+            if (servicesButton && dropdownMenu) {
+                // Toggle dropdown on click
+                servicesButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropdownMenu.classList.toggle('show');
+                });
+                
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!servicesButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                });
+                
+                // Close dropdown when clicking on a service link
+                dropdownMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        dropdownMenu.classList.remove('show');
+                    });
+                });
+            }
+        }
+
+        // Initialize dropdown functionality
+        initServicesDropdown();
+    </script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Outta The Box Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            deepblue: '#0A2540',
+            teal: '#008080',
+            coral: '#FF6F3C',
+            charcoal: '#333333',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+
+   <!-- Enhanced Navbar -->
+   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-deepblue/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20">
+     <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-[80px]">
+       
+       <!-- Logo -->
+       <a href="index.html" class="flex items-center space-x-3 group">
+         <img src="assets/images/Colorful Brain Digital World Technology Logo.png" alt="Outta The Box Marketing Logo" class="h-[62px] w-auto group-hover:scale-105 transition-transform duration-300">
+         <div class="text-deepblue dark:text-white font-bold text-2xl group-hover:text-teal transition-colors duration-300 text-center">
+           <div>Outta the box</div>
+           <div>Marketing</div>
+         </div>
+       </a>
+
+       <!-- Desktop Navigation -->
+       <div class="hidden lg:flex items-center space-x-8">
+         <a href="index.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Home</a>
+         <a href="about.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">About</a>
+         <a href="services.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Services</a>
+         <a href="case-studies.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Case Studies</a>
+         <a href="blog.html" class="text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Blog</a>
+         <a href="contact.html" class="text-teal font-medium border-b-2 border-teal">Contact</a>
+       </div>
+
+       <!-- Mobile Menu Button & Dark Mode -->
+       <div class="flex items-center space-x-3">
+         <button id="darkModeToggle" class="p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+           <span class="text-lg">🌙</span>
+         </button>
+         
+         <button id="mobileMenuToggle" class="lg:hidden p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+           </svg>
+         </button>
+       </div>
+     </div>
+
+     <!-- Mobile Menu -->
+     <div id="mobileMenu" class="lg:hidden fixed top-[80px] right-0 w-80 h-full bg-white dark:bg-gray-800 shadow-2xl border-l border-gray-200 dark:border-gray-700 transform translate-x-full transition-transform duration-300">
+       <div class="p-6 space-y-6">
+         <a href="index.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Home</a>
+         <a href="about.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">About</a>
+         <a href="services.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Services</a>
+         <a href="case-studies.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Case Studies</a>
+         <a href="blog.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Blog</a>
+         <a href="contact.html" class="block text-teal font-medium text-lg">Contact</a>
+       </div>
+     </div>
+   </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-deepblue to-charcoal dark:from-gray-900 dark:to-gray-800 py-20 lg:py-32 text-center mt-[80px]">
+    <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+      Let’s Talk Growth 🚀
+    </h1>
+    <p class="text-xl text-white/90 max-w-2xl mx-auto animate-fade-in" style="animation-delay:0.2s;">
+      Ready to transform your D2C brand? Tell us about your growth challenge — we’ll turn it into a pipeline strategy.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 px-6">
+      
+      <!-- Contact Form - Takes 2 columns on desktop -->
+      <div class="lg:col-span-2 animate-fade-in">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-100 dark:border-gray-700">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Ready to Scale? Let's Talk</h2>
+          <p class="text-gray-600 dark:text-gray-300 mb-8">Tell us about your growth challenge and we'll craft a strategy that converts.</p>
+          
+          <form class="space-y-6" id="contactForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Full Name *</label>
+                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200" placeholder="John Smith">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Email Address *</label>
+                <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200" placeholder="john@company.com">
+              </div>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Company Name</label>
+              <input type="text" name="company" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200" placeholder="Your Company Inc.">
+            </div>
+            
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">What do you need help with? *</label>
+              <select name="service" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200">
+                <option value="">Select a service...</option>
+                <option value="awareness">Awareness Campaigns</option>
+                <option value="lead-gen">Lead Generation</option>
+                <option value="icp-research">ICP Research</option>
+                <option value="full-funnel">Full Funnel Strategy</option>
+              </select>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Tell us about your challenge</label>
+              <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent dark:bg-gray-700 dark:text-white transition-all duration-200" placeholder="What's your biggest growth challenge right now? What results are you looking to achieve?"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
+              Book My Growth Call 🚀
+            </button>
+            
+            <!-- Trust Copy -->
+            <div class="text-center">
+              <p class="text-sm text-gray-500 dark:text-gray-400 flex items-center justify-center gap-2">
+                <span class="text-green-500">✓</span>
+                We typically respond within 24 hours. No spam, ever.
+              </p>
+            </div>
+          </form>
+
+          <!-- Social Proof -->
+          <div class="mt-8 p-6 bg-gradient-to-r from-teal/5 to-coral/5 dark:from-teal/10 dark:to-coral/10 rounded-xl border border-teal/20 dark:border-coral/20">
+            <p class="text-sm text-gray-700 dark:text-gray-300 text-center font-medium">
+              🚀 <strong>Trusted by brands who sold out in 48h</strong> · Achieved <strong>3x engagement</strong> · Doubled sales in <strong>6 months</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar - Contact Info & Calendly -->
+      <div class="animate-fade-in" style="animation-delay:0.2s;">
+        <div class="space-y-8">
+          <!-- Contact Information -->
+          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border border-gray-100 dark:border-gray-700">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal to-coral rounded-xl flex items-center justify-center text-2xl text-white shadow-lg">
+                  📧
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 dark:text-white text-lg">Email Us</h4>
+                  <p class="text-gray-600 dark:text-gray-300 mb-1">hello@outtatheboxmarketing.com</p>
+                  <a href="mailto:hello@outtatheboxmarketing.com" class="text-teal hover:text-coral font-medium transition-colors">Send Email →</a>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal to-coral rounded-xl flex items-center justify-center text-2xl text-white shadow-lg">
+                  📱
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 dark:text-white text-lg">Call Us</h4>
+                  <p class="text-gray-600 dark:text-gray-300 mb-1">+1 (555) 123-4567</p>
+                  <a href="tel:+15551234567" class="text-teal hover:text-coral font-medium transition-colors">Call Now →</a>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal to-coral rounded-xl flex items-center justify-center text-2xl text-white shadow-lg">
+                  📍
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 dark:text-white text-lg">Location</h4>
+                  <p class="text-gray-600 dark:text-gray-300">San Francisco, CA<br>Remote Worldwide</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Booking -->
+          <div class="bg-gradient-to-br from-deepblue to-charcoal dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-6 text-white">
+            <h3 class="text-xl font-bold mb-4">Book Instantly</h3>
+            <p class="text-white/90 mb-4 text-sm">Skip the form and book directly on our calendar</p>
+            <a href="#" id="calendlyLink" class="block w-full bg-white text-deepblue font-bold py-3 px-4 rounded-lg text-center hover:bg-gray-100 transition-colors">
+              📅 Schedule Now
+            </a>
+            <p class="text-xs text-white/70 mt-2">15-min discovery call</p>
+          </div>
+
+          <!-- Response Time -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+            <div class="flex items-center space-x-3 mb-3">
+              <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                <span class="text-green-600 dark:text-green-400 text-sm">⚡</span>
+              </div>
+              <h4 class="font-bold text-gray-900 dark:text-white">Fast Response</h4>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">We typically respond within 24 hours during business days. Emergency? Call us directly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
+      <p class="text-gray-600 dark:text-gray-400 text-sm">
+        © 2025 Outta The Box Marketing. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const html = document.documentElement;
+
+    darkModeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      darkModeToggle.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('translate-x-full');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        mobileMenu.classList.add('translate-x-full');
+      }
+    });
+
+    const elements = document.querySelectorAll('.animate-fade-in');
+    elements.forEach((el, i) => { el.style.animationDelay = `${i * 0.1}s`; });
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contactForm');
+    const calendlyLink = document.getElementById('calendlyLink');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+      
+      // Basic validation
+      if (!data.name || !data.email || !data.service) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // Simulate form submission (replace with actual endpoint)
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitButton.textContent;
+      
+      submitButton.textContent = 'Sending...';
+      submitButton.disabled = true;
+      
+      // Simulate API call
+      setTimeout(() => {
+        alert('Thank you! We\'ll get back to you within 24 hours.');
+        contactForm.reset();
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+      }, 2000);
+    });
+
+    // Calendly Integration (replace with your actual Calendly URL)
+    calendlyLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Replace with your actual Calendly URL
+      window.open('https://calendly.com/your-username/discovery-call', '_blank');
+    });
+
+    // Form field focus effects
+    const formInputs = contactForm.querySelectorAll('input, select, textarea');
+    formInputs.forEach(input => {
+      input.addEventListener('focus', function() {
+        this.parentElement.classList.add('ring-2', 'ring-teal/20');
+      });
+      
+      input.addEventListener('blur', function() {
+        this.parentElement.classList.remove('ring-2', 'ring-teal/20');
+      });
+    });
+  </script>
+</body>
+</html>

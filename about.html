@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Outta The Box Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            deepblue: '#0A2540',
+            teal: '#008080',
+            coral: '#FF6F3C',
+            charcoal: '#333333',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+
+    /* Smooth scroll behavior */
+    html { scroll-behavior: smooth; }
+
+    /* Mobile menu animations */
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    /* Dropdown animations */
+    .dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+    }
+    .dropdown:hover .dropdown-menu,
+    .dropdown-menu.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* Active section highlighting */
+    .nav-link.active {
+      color: #008080;
+      position: relative;
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #008080, #FF6F3C);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+
+   <!-- Enhanced Navbar -->
+   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-deepblue/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20">
+     <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-[80px]">
+       
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="assets/images/Colorful Brain Digital World Technology Logo.png" alt="Outta The Box Marketing Logo" class="h-[62px] w-auto group-hover:scale-105 transition-transform duration-300">
+                <div class="text-deepblue dark:text-white font-bold text-2xl group-hover:text-teal transition-colors duration-300 text-center">
+                  <div>Outta the box</div>
+                  <div>Marketing</div>
+                </div>
+            </a>
+
+       <!-- Desktop Navigation -->
+       <div class="hidden lg:flex items-center space-x-8">
+         <a href="index.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium relative">Home</a>
+         
+         <!-- Services Dropdown -->
+         <div class="dropdown relative">
+           <button class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium flex items-center space-x-1 bg-transparent border-none cursor-pointer">
+             <span>Services</span>
+             <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+             </svg>
+           </button>
+           <div class="dropdown-menu absolute top-full left-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 py-2">
+             <a href="services.html" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200 border-b border-gray-200 dark:border-gray-700">
+               <div class="font-semibold text-teal">View All Services</div>
+               <div class="text-sm text-gray-500">Complete services overview</div>
+             </a>
+             <a href="services.html#strategy" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">Digital Marketing Strategy & Consulting</div>
+               <div class="text-sm text-gray-500">Data-driven marketing strategies</div>
+             </a>
+             <a href="services.html#automation" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">AI-Powered Marketing Automation</div>
+               <div class="text-sm text-gray-500">Intelligent automation systems</div>
+             </a>
+             <a href="services.html#content" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">SEO & Content Marketing</div>
+               <div class="text-sm text-gray-500">Compelling brand storytelling</div>
+             </a>
+             <a href="services.html#ppc" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">PPC & Paid Media Management</div>
+               <div class="text-sm text-gray-500">Performance-driven advertising</div>
+             </a>
+             <a href="services.html#technology" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">Marketing Technology Integration</div>
+               <div class="text-sm text-gray-500">Seamless tech stack integration</div>
+             </a>
+             <a href="services.html#growth" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">Growth Hacking & Conversion Optimization</div>
+               <div class="text-sm text-gray-500">ROI measurement & optimization</div>
+             </a>
+           </div>
+         </div>
+
+         <a href="about.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium active">About</a>
+         <a href="case-studies.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Case Studies</a>
+         <a href="blog.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Blog</a>
+         
+         <!-- CTA Button -->
+         <a href="contact.html" class="bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+           Let's Talk Growth
+         </a>
+       </div>
+
+       <!-- Mobile Menu Button & Dark Mode -->
+       <div class="flex items-center space-x-3">
+         <button id="darkModeToggle" class="p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+           <span class="text-lg">🌙</span>
+         </button>
+         
+         <button id="mobileMenuToggle" class="lg:hidden p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+           </svg>
+         </button>
+       </div>
+     </div>
+
+     <!-- Mobile Menu -->
+     <div id="mobileMenu" class="mobile-menu lg:hidden fixed top-[80px] right-0 w-80 h-full bg-white dark:bg-gray-800 shadow-2xl border-l border-gray-200 dark:border-gray-700">
+       <div class="p-6 space-y-6">
+         <a href="index.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Home</a>
+         
+         <div class="space-y-2">
+           <div class="text-deepblue dark:text-white font-medium text-lg">Services</div>
+           <div class="pl-4 space-y-3">
+             <a href="services.html#awareness" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200">
+               <div class="font-medium">Awareness Campaigns</div>
+               <div class="text-sm text-gray-500">Stop the scroll & win attention</div>
+             </a>
+             <a href="services.html#engagement" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200">
+               <div class="font-medium">Engagement Strategies</div>
+               <div class="text-sm text-gray-500">WhatsApp, RCS & conversation flows</div>
+             </a>
+             <a href="services.html#lead-capture" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200">
+               <div class="font-medium">Smart Lead Capture</div>
+               <div class="text-sm text-gray-500">ICP-driven forms that filter prospects</div>
+             </a>
+             <a href="services.html#conversions" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200">
+               <div class="font-medium">Conversion Optimization</div>
+               <div class="text-sm text-gray-500">Retargeting + CRO = revenue wins</div>
+             </a>
+           </div>
+         </div>
+
+         <a href="about.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg active">About</a>
+         <a href="case-studies.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Case Studies</a>
+         <a href="blog.html" class="block text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg">Blog</a>
+         
+         <a href="contact.html" class="block w-full bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-bold text-center hover:shadow-lg transition-all duration-300">
+           Let's Talk Growth
+         </a>
+       </div>
+     </div>
+   </nav>
+
+  <!-- Hero Section -->
+  <section class="relative py-20 px-6 bg-gradient-to-br from-deepblue to-charcoal dark:from-gray-900 dark:to-gray-800 mt-[80px] overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto">
+      <div class="text-center">
+        <!-- Content -->
+        <div class="text-white max-w-5xl mx-auto">
+          <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+            Strategic Marketing Excellence with Proven AI-Powered Results
+          </h1>
+          <p class="text-xl text-white/90 mb-8 leading-relaxed">
+            Founded on 18+ years of marketing leadership experience, helping businesses transform their digital presence and achieve measurable growth through innovative strategies and cutting-edge technology.
+          </p>
+          
+          <!-- Key Metrics -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-teal">18+</div>
+              <div class="text-sm text-white/80">Years Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-coral">300%</div>
+              <div class="text-sm text-white/80">Revenue Growth</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-teal">$10M+</div>
+              <div class="text-sm text-white/80">Ad Spend Managed</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-coral">50+</div>
+              <div class="text-sm text-white/80">Team Members Led</div>
+            </div>
+          </div>
+          
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform text-center">
+              Book Strategic Consultation
+            </a>
+            <a href="#framework" class="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all duration-300 text-center">
+              View Our Methodology
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Story & Journey -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+          The Journey from Corporate Leadership to Growth Innovation
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
+          With over 18 years of marketing leadership experience across telecom, technology, and B2B sectors, I've witnessed firsthand the evolution of digital marketing from traditional campaigns to AI-powered precision marketing.
+        </p>
+      </div>
+
+      <!-- Professional Journey Timeline -->
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-teal to-coral"></div>
+        
+        <!-- Timeline Items -->
+        <div class="space-y-12">
+          <!-- Vodafone India -->
+          <div class="relative flex items-center">
+            <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-teal rounded-full border-4 border-white dark:border-gray-900"></div>
+            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-2">Vodafone India</h3>
+                <p class="text-teal font-semibold mb-3">International Roaming Business Strategies</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Led international roaming business strategies and market expansion initiatives, managing cross-border marketing campaigns and customer acquisition programs across multiple markets.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-teal/10 text-teal rounded-full text-sm">Market Expansion</span>
+                  <span class="px-3 py-1 bg-teal/10 text-teal rounded-full text-sm">Cross-border Marketing</span>
+                  <span class="px-3 py-1 bg-teal/10 text-teal rounded-full text-sm">Customer Acquisition</span>
+                </div>
+              </div>
+            </div>
+            <!-- Founder Image - Opposite side -->
+            <div class="hidden md:block md:w-1/2 md:pl-8">
+              <div class="relative flex justify-center">
+                <div class="relative z-10 w-64 h-64">
+                  <img src="assets/images/Founder.png" 
+                       alt="Professional headshot" 
+                       class="w-full h-full object-cover rounded-2xl shadow-2xl">
+                </div>
+                <!-- Decorative elements -->
+                <div class="absolute -top-2 -right-2 w-12 h-12 bg-teal/20 rounded-full blur-xl"></div>
+                <div class="absolute -bottom-2 -left-2 w-16 h-16 bg-coral/20 rounded-full blur-xl"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Norton -->
+          <div class="relative flex items-center">
+            <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-coral rounded-full border-4 border-white dark:border-gray-900"></div>
+            <div class="ml-16 md:ml-0 md:w-1/2 md:ml-auto md:pl-8">
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-2">Norton</h3>
+                <p class="text-coral font-semibold mb-3">Enterprise Security Marketing</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Developed and executed enterprise security marketing strategies, focusing on B2B lead generation and complex sales cycle management for enterprise clients.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-coral/10 text-coral rounded-full text-sm">B2B Marketing</span>
+                  <span class="px-3 py-1 bg-coral/10 text-coral rounded-full text-sm">Lead Generation</span>
+                  <span class="px-3 py-1 bg-coral/10 text-coral rounded-full text-sm">Enterprise Sales</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FireFly Networks -->
+          <div class="relative flex items-center">
+            <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-teal rounded-full border-4 border-white dark:border-gray-900"></div>
+            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-2">FireFly Networks</h3>
+                <p class="text-teal font-semibold mb-3">Digital Transformation & Technology Marketing</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Spearheaded digital transformation initiatives and technology marketing strategies, driving innovation in network solutions and customer engagement platforms.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-teal/10 text-teal rounded-full text-sm">Digital Transformation</span>
+                  <span class="px-3 py-1 bg-teal/10 text-teal rounded-full text-sm">Technology Marketing</span>
+                  <span class="px-3 py-1 bg-teal/10 text-teal rounded-full text-sm">Innovation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- nexG Platforms (Current) -->
+          <div class="relative flex items-center">
+            <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-coral rounded-full border-4 border-white dark:border-gray-900"></div>
+            <div class="ml-16 md:ml-0 md:w-1/2 md:ml-auto md:pl-8">
+              <div class="bg-gradient-to-r from-teal/10 to-coral/10 dark:from-teal/20 dark:to-coral/20 rounded-xl p-6 shadow-lg border border-teal/20 dark:border-teal/30">
+                <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-2">nexG Platforms (Current CMO)</h3>
+                <p class="text-coral font-semibold mb-3">Leading CPaaS Marketing Strategy & Growth</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Currently serving as CMO, leading CPaaS marketing strategy and growth initiatives, managing multi-million dollar budgets and cross-functional teams of 50+ professionals.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-coral/20 text-coral rounded-full text-sm font-semibold">Current Role</span>
+                  <span class="px-3 py-1 bg-coral/10 text-coral rounded-full text-sm">CPaaS Marketing</span>
+                  <span class="px-3 py-1 bg-coral/10 text-coral rounded-full text-sm">Team Leadership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement Highlights -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-6 bg-gradient-to-br from-teal/10 to-teal/5 rounded-xl">
+          <div class="text-4xl font-bold text-teal mb-2">300%+</div>
+          <div class="text-gray-600 dark:text-gray-400">Revenue Growth Delivered</div>
+        </div>
+        <div class="text-center p-6 bg-gradient-to-br from-coral/10 to-coral/5 rounded-xl">
+          <div class="text-4xl font-bold text-coral mb-2">$10M+</div>
+          <div class="text-gray-600 dark:text-gray-400">Advertising Spend Managed</div>
+        </div>
+        <div class="text-center p-6 bg-gradient-to-br from-teal/10 to-teal/5 rounded-xl">
+          <div class="text-4xl font-bold text-teal mb-2">15+</div>
+          <div class="text-gray-600 dark:text-gray-400">Digital Transformations Led</div>
+        </div>
+        <div class="text-center p-6 bg-gradient-to-br from-coral/10 to-coral/5 rounded-xl">
+          <div class="text-4xl font-bold text-coral mb-2">50+</div>
+          <div class="text-gray-600 dark:text-gray-400">Team Members Managed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCELERATE Framework™ -->
+  <section id="framework" class="py-20 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+          Our Proprietary Methodology: The ACCELERATE Framework™
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
+          A systematic 8-step approach that combines strategic thinking with AI-powered execution to deliver measurable growth and sustainable competitive advantage.
+        </p>
+      </div>
+
+      <!-- Interactive Framework Diagram -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <!-- A - Analyze -->
+        <div class="framework-step group cursor-pointer" data-step="analyze">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-teal/20 hover:border-teal group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal to-teal/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">A</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Analyze</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              Current state and competitive market position
+            </p>
+          </div>
+        </div>
+
+        <!-- C - Create -->
+        <div class="framework-step group cursor-pointer" data-step="create">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-coral/20 hover:border-coral group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-coral to-coral/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">C</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Create</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              Data-driven customer personas and journey maps
+            </p>
+          </div>
+        </div>
+
+        <!-- C - Craft -->
+        <div class="framework-step group cursor-pointer" data-step="craft">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-teal/20 hover:border-teal group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal to-teal/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">C</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Craft</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              Compelling value propositions and messaging frameworks
+            </p>
+          </div>
+        </div>
+
+        <!-- E - Execute -->
+        <div class="framework-step group cursor-pointer" data-step="execute">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-coral/20 hover:border-coral group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-coral to-coral/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">E</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Execute</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              Multi-channel campaigns with precision targeting
+            </p>
+          </div>
+        </div>
+
+        <!-- L - Launch -->
+        <div class="framework-step group cursor-pointer" data-step="launch">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-teal/20 hover:border-teal group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal to-teal/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">L</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Launch</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              AI-powered automation and optimization systems
+            </p>
+          </div>
+        </div>
+
+        <!-- E - Evaluate -->
+        <div class="framework-step group cursor-pointer" data-step="evaluate">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-coral/20 hover:border-coral group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-coral to-coral/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">E</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Evaluate</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              Performance with advanced analytics and insights
+            </p>
+          </div>
+        </div>
+
+        <!-- R - Refine -->
+        <div class="framework-step group cursor-pointer" data-step="refine">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-teal/20 hover:border-teal group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal to-teal/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">R</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Refine</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              And scale successful initiatives based on data
+            </p>
+          </div>
+        </div>
+
+        <!-- A - Achieve -->
+        <div class="framework-step group cursor-pointer" data-step="achieve">
+          <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-coral/20 hover:border-coral group-hover:shadow-xl transition-all duration-300 h-full">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-coral to-coral/80 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <span class="text-2xl font-bold text-white">A</span>
+              </div>
+              <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Achieve</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm text-center">
+              Sustainable, measurable growth and ROI
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Framework Details Modal -->
+      <div id="frameworkModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+          <div class="p-8">
+            <div class="flex justify-between items-center mb-6">
+              <h3 id="modalTitle" class="text-3xl font-bold text-deepblue dark:text-white"></h3>
+              <button id="closeModal" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl">×</button>
+            </div>
+            <div id="modalContent" class="prose prose-lg max-w-none dark:prose-invert"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download CTA -->
+      <div class="text-center">
+        <a href="contact.html" class="inline-flex items-center space-x-3 bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+          <span>Get Complete ACCELERATE Framework™ Guide</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Expertise Areas -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+          Deep Expertise Across Marketing Disciplines
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
+          Specialized knowledge and proven experience across all critical areas of modern marketing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gradient-to-br from-teal/10 to-teal/5 rounded-xl p-8 border border-teal/20">
+          <div class="w-16 h-16 bg-teal rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🎯</span>
+          </div>
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Strategic Marketing Leadership</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">18+ years of C-level marketing experience with proven results across multiple industries and business models.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Multi-million dollar budget management</li>
+            <li>• Cross-functional team leadership</li>
+            <li>• Strategic planning and execution</li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-coral/10 to-coral/5 rounded-xl p-8 border border-coral/20">
+          <div class="w-16 h-16 bg-coral rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🤖</span>
+          </div>
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">AI & Marketing Technology</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Advanced implementation of predictive analytics, automation, and machine learning for marketing optimization.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Predictive customer analytics</li>
+            <li>• Marketing automation systems</li>
+            <li>• AI-powered personalization</li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-teal/10 to-teal/5 rounded-xl p-8 border border-teal/20">
+          <div class="w-16 h-16 bg-teal rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📈</span>
+          </div>
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">B2B Growth Strategies</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Expertise in complex sales cycles and enterprise marketing with proven track record of success.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Account-based marketing</li>
+            <li>• Lead generation optimization</li>
+            <li>• Sales enablement strategies</li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-coral/10 to-coral/5 rounded-xl p-8 border border-coral/20">
+          <div class="w-16 h-16 bg-coral rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🔄</span>
+          </div>
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Digital Transformation</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Successfully led 15+ digital transformation initiatives across various industries and business models.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Process modernization</li>
+            <li>• Technology integration</li>
+            <li>• Change management</li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-teal/10 to-teal/5 rounded-xl p-8 border border-teal/20">
+          <div class="w-16 h-16 bg-teal rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📊</span>
+          </div>
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Performance Marketing</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Managed $10M+ in advertising spend with consistent ROI improvement and optimization strategies.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Paid advertising optimization</li>
+            <li>• ROI measurement and analysis</li>
+            <li>• Budget allocation strategies</li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-coral/10 to-coral/5 rounded-xl p-8 border border-coral/20">
+          <div class="w-16 h-16 bg-coral rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">👥</span>
+          </div>
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Cross-functional Leadership</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Experience managing marketing, sales, and product teams with proven results in team building and development.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Team building and development</li>
+            <li>• Cross-department collaboration</li>
+            <li>• Performance management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Recognition & Credentials -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+          Industry Recognition and Professional Excellence
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
+          Recognized expertise and thought leadership in marketing technology and AI applications.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+          <div class="text-4xl mb-4">🎤</div>
+          <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Speaking Engagements</h3>
+          <p class="text-gray-600 dark:text-gray-400">Featured speaker at 20+ marketing conferences and industry events</p>
+        </div>
+
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+          <div class="text-4xl mb-4">📝</div>
+          <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Thought Leadership</h3>
+          <p class="text-gray-600 dark:text-gray-400">Published thought leader in Marketing Technology and AI applications</p>
+        </div>
+
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+          <div class="text-4xl mb-4">🏆</div>
+          <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Certifications</h3>
+          <p class="text-gray-600 dark:text-gray-400">Certified in Google Analytics, HubSpot, Salesforce, and major marketing platforms</p>
+        </div>
+
+        <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="text-xl font-bold text-deepblue dark:text-white mb-2">Advisory Roles</h3>
+          <p class="text-gray-600 dark:text-gray-400">Advisor to 5 marketing technology startups and industry associations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Success Showcase -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+          Transforming Businesses Through Strategic Excellence
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
+          Real results from real clients who trusted us with their growth and transformation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="bg-gradient-to-br from-teal/10 to-teal/5 rounded-2xl p-8 border border-teal/20">
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">SaaS Transformation</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Achieved 400% increase in qualified leads and 250% revenue growth within 12 months through AI-powered lead scoring and nurture automation.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-teal">400%</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">Lead Increase</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-coral">250%</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">Revenue Growth</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-coral/10 to-coral/5 rounded-2xl p-8 border border-coral/20">
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">E-commerce Optimization</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Improved marketing ROI from 3:1 to 12:1 through predictive analytics and automated customer journey optimization.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-teal">12:1</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">Marketing ROI</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-coral">300%</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">ROI Improvement</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-teal/10 to-teal/5 rounded-2xl p-8 border border-teal/20">
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">B2B Growth</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Reduced customer acquisition cost by 60% while increasing average deal size by 45% through strategic account-based marketing.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-teal">60%</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">CAC Reduction</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-coral">45%</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">Deal Size Increase</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-coral/10 to-coral/5 rounded-2xl p-8 border border-coral/20">
+          <h3 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Technology Startup</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Built complete go-to-market strategy resulting in $5M Series A funding through systematic market validation and growth execution.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-teal">$5M</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">Series A Funding</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-coral">100%</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">GTM Success</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy & Approach -->
+  <section class="py-20 bg-gradient-to-br from-deepblue to-charcoal dark:from-gray-900 dark:to-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+          Human-First, AI-Powered Marketing Philosophy
+        </h2>
+        <p class="text-xl text-white/90 max-w-4xl mx-auto">
+          Our approach combines strategic thinking with technological innovation to create marketing systems that build sustainable competitive advantages.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+          <div class="w-16 h-16 bg-teal rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🎯</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">Strategic Foundation</h3>
+          <p class="text-white/80">Every tactic must support a larger strategic objective. We ensure all marketing activities align with your business goals and drive measurable outcomes.</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+          <div class="w-16 h-16 bg-coral rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📊</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">Data-Driven Decisions</h3>
+          <p class="text-white/80">Every recommendation is backed by data and testing. We use advanced analytics and AI to make informed decisions that drive real results.</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+          <div class="w-16 h-16 bg-teal rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🤖</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">Technology Leverage</h3>
+          <p class="text-white/80">AI and automation amplify human creativity and strategic thinking. We don't replace human insight—we enhance it with cutting-edge technology.</p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <blockquote class="text-2xl text-white/90 italic max-w-4xl mx-auto">
+          "We don't just implement marketing campaigns—we build marketing engines that scale with your business and adapt to market changes."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Side & Humanization -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+          Beyond the Boardroom
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
+          The balance between professional excellence and personal curiosity drives innovation in our client work.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed max-w-4xl mx-auto">
+          When not developing marketing strategies, you'll find me exploring the latest AI tools and their marketing applications, solving crossword puzzles (great for strategic thinking!), tending to my jade plant collection, or binge-watching shows like Panchayat.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-12 leading-relaxed max-w-4xl mx-auto">
+          I believe the best marketing insights often come from understanding human behavior in everyday contexts. This balance between professional excellence and personal curiosity drives innovation in our client work and keeps us connected to the real people behind the data.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="px-6 py-3 bg-teal/10 text-teal rounded-full text-sm font-medium">AI Tool Explorer</span>
+          <span class="px-6 py-3 bg-coral/10 text-coral rounded-full text-sm font-medium">Crossword Enthusiast</span>
+          <span class="px-6 py-3 bg-teal/10 text-teal rounded-full text-sm font-medium">Plant Parent</span>
+          <span class="px-6 py-3 bg-coral/10 text-coral rounded-full text-sm font-medium">Series Binger</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-teal to-coral">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+        Ready to Transform Your Marketing Performance?
+      </h2>
+      <p class="text-xl text-white/90 mb-12 max-w-4xl mx-auto">
+        Let's discuss how our strategic approach and AI-powered methodology can drive measurable growth for your business.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <h3 class="text-xl font-bold text-white mb-4">Free Strategic Consultation</h3>
+          <p class="text-white/80 mb-4">30-minute strategy session to discuss your growth challenges and opportunities.</p>
+          <a href="contact.html" class="inline-block bg-white text-deepblue px-6 py-3 rounded-lg font-bold hover:scale-105 transition-transform duration-300">
+            Book Consultation
+          </a>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <h3 class="text-xl font-bold text-white mb-4">Complimentary Marketing Audit</h3>
+          <p class="text-white/80 mb-4">Comprehensive performance analysis with actionable recommendations.</p>
+          <a href="contact.html" class="inline-block bg-white text-deepblue px-6 py-3 rounded-lg font-bold hover:scale-105 transition-transform duration-300">
+            Get Free Audit
+          </a>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <h3 class="text-xl font-bold text-white mb-4">Custom Growth Strategy</h3>
+          <p class="text-white/80 mb-4">Tailored approach designed specifically for your business needs.</p>
+          <a href="contact.html" class="inline-block bg-white text-deepblue px-6 py-3 rounded-lg font-bold hover:scale-105 transition-transform duration-300">
+            Start Strategy Session
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+91-9876543210" class="bg-white text-deepblue px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform duration-300">
+          📞 Call Now
+        </a>
+        <a href="mailto:hello@outtatheboxmarketing.com" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-deepblue transition-all duration-300">
+          ✉️ Email Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 text-center py-6">
+    <p class="text-gray-600 dark:text-gray-400 text-sm">
+      © 2025 Outta The Box Marketing. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navbar = document.getElementById('navbar');
+    const html = document.documentElement;
+    
+    // Dark mode toggle
+    darkModeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      darkModeToggle.querySelector('span').textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+    });
+    
+    // Mobile menu toggle
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      // Toggle hamburger icon
+      const icon = mobileMenuToggle.querySelector('svg');
+      if (mobileMenu.classList.contains('open')) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+      } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      }
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+        const icon = mobileMenuToggle.querySelector('svg');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      }
+    });
+    
+    // Close mobile menu when clicking on links
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        const icon = mobileMenuToggle.querySelector('svg');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      });
+    });
+    
+    // Navbar background based on scroll position
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      
+      if (scrollY > 50) {
+        // Scrolled - solid background
+        navbar.classList.remove('bg-white/95', 'dark:bg-deepblue/95');
+        navbar.classList.add('bg-white', 'dark:bg-deepblue');
+        navbar.classList.add('shadow-xl');
+      } else {
+        // At top - transparent background
+        navbar.classList.remove('bg-white', 'dark:bg-deepblue');
+        navbar.classList.add('bg-white/95', 'dark:bg-deepblue/95');
+        navbar.classList.remove('shadow-xl');
+      }
+    });
+    
+    // Active section highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    function highlightActiveSection() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', highlightActiveSection);
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Framework Modal Functionality
+    const frameworkSteps = document.querySelectorAll('.framework-step');
+    const modal = document.getElementById('frameworkModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const closeModal = document.getElementById('closeModal');
+
+    const frameworkData = {
+      analyze: {
+        title: 'A - Analyze',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Current State and Competitive Market Position</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Comprehensive Audit and Assessment</h5>
+              <p class="text-gray-600 dark:text-gray-400">We conduct a thorough analysis of your current marketing performance, identifying strengths, weaknesses, and opportunities for improvement.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Market Research and Competitive Analysis</h5>
+              <p class="text-gray-600 dark:text-gray-400">Deep dive into market dynamics, competitor strategies, and positioning opportunities to identify gaps and competitive advantages.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Performance Benchmarking and Gap Identification</h5>
+              <p class="text-gray-600 dark:text-gray-400">Compare your performance against industry standards and best practices to identify specific areas for improvement and growth.</p>
+            </div>
+          </div>
+        `
+      },
+      create: {
+        title: 'C - Create',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Data-Driven Customer Personas and Journey Maps</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">ICP Research and Persona Development</h5>
+              <p class="text-gray-600 dark:text-gray-400">Identify and define your Ideal Customer Profile through data analysis, interviews, and behavioral insights to ensure targeted marketing efforts.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer Journey Mapping and Touchpoint Analysis</h5>
+              <p class="text-gray-600 dark:text-gray-400">Map the complete customer journey from awareness to purchase, identifying key touchpoints and optimization opportunities.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Behavioral Insights and Preference Identification</h5>
+              <p class="text-gray-600 dark:text-gray-400">Analyze customer behavior patterns and preferences to create highly targeted and personalized marketing strategies.</p>
+            </div>
+          </div>
+        `
+      },
+      craft: {
+        title: 'C - Craft',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Compelling Value Propositions and Messaging Frameworks</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Unique Selling Proposition Development</h5>
+              <p class="text-gray-600 dark:text-gray-400">Create compelling value propositions that clearly communicate your unique benefits and differentiate you from competitors.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Message-to-Market Alignment</h5>
+              <p class="text-gray-600 dark:text-gray-400">Ensure your messaging resonates with your target audience and aligns with market needs and expectations.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Brand Positioning and Differentiation Strategy</h5>
+              <p class="text-gray-600 dark:text-gray-400">Develop clear positioning that sets you apart in the market and creates a unique space for your brand.</p>
+            </div>
+          </div>
+        `
+      },
+      execute: {
+        title: 'E - Execute',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Multi-Channel Campaigns with Precision Targeting</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Strategic Campaign Development and Launch</h5>
+              <p class="text-gray-600 dark:text-gray-400">Create and launch comprehensive marketing campaigns across multiple channels with strategic timing and coordination.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Cross-Platform Integration and Optimization</h5>
+              <p class="text-gray-600 dark:text-gray-400">Ensure seamless integration across all marketing channels for consistent messaging and optimal customer experience.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Performance Monitoring and Real-Time Adjustments</h5>
+              <p class="text-gray-600 dark:text-gray-400">Continuously monitor campaign performance and make real-time adjustments to optimize results and ROI.</p>
+            </div>
+          </div>
+        `
+      },
+      launch: {
+        title: 'L - Launch',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">AI-Powered Automation and Optimization Systems</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Marketing Automation Implementation</h5>
+              <p class="text-gray-600 dark:text-gray-400">Deploy sophisticated automation systems that nurture leads and engage customers throughout their journey.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">AI Tool Integration and Setup</h5>
+              <p class="text-gray-600 dark:text-gray-400">Integrate cutting-edge AI tools and technologies to enhance marketing effectiveness and efficiency.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Predictive Analytics and Machine Learning Deployment</h5>
+              <p class="text-gray-600 dark:text-gray-400">Implement predictive analytics and machine learning models to anticipate customer behavior and optimize marketing decisions.</p>
+            </div>
+          </div>
+        `
+      },
+      evaluate: {
+        title: 'E - Evaluate',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Performance with Advanced Analytics and Insights</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Comprehensive Performance Measurement</h5>
+              <p class="text-gray-600 dark:text-gray-400">Track and measure all key performance indicators across all marketing channels and touchpoints.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">ROI Analysis and Attribution Modeling</h5>
+              <p class="text-gray-600 dark:text-gray-400">Analyze return on investment and implement attribution modeling to understand the true impact of each marketing activity.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Data-Driven Insights and Recommendations</h5>
+              <p class="text-gray-600 dark:text-gray-400">Generate actionable insights from data analysis and provide strategic recommendations for continuous improvement.</p>
+            </div>
+          </div>
+        `
+      },
+      refine: {
+        title: 'R - Refine',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">And Scale Successful Initiatives Based on Data</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Continuous Optimization and Improvement</h5>
+              <p class="text-gray-600 dark:text-gray-400">Continuously optimize marketing strategies based on performance data and market feedback.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">A/B Testing and Experimentation</h5>
+              <p class="text-gray-600 dark:text-gray-400">Conduct systematic A/B testing and experimentation to identify winning strategies and optimize performance.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Performance-Based Scaling Strategies</h5>
+              <p class="text-gray-600 dark:text-gray-400">Scale successful initiatives based on proven performance data and ROI metrics.</p>
+            </div>
+          </div>
+        `
+      },
+      achieve: {
+        title: 'A - Achieve',
+        content: `
+          <h4 class="text-2xl font-bold text-deepblue dark:text-white mb-4">Sustainable, Measurable Growth and ROI</h4>
+          <div class="space-y-4">
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Long-Term Results and Business Impact</h5>
+              <p class="text-gray-600 dark:text-gray-400">Focus on achieving sustainable, long-term results that drive meaningful business impact and growth.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Sustainable Systems and Processes</h5>
+              <p class="text-gray-600 dark:text-gray-400">Build sustainable marketing systems and processes that can scale with your business growth.</p>
+            </div>
+            <div>
+              <h5 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Measurable Outcomes and Success Metrics</h5>
+              <p class="text-gray-600 dark:text-gray-400">Establish clear success metrics and measurable outcomes to track progress and demonstrate value.</p>
+            </div>
+          </div>
+        `
+      }
+    };
+
+    frameworkSteps.forEach(step => {
+      step.addEventListener('click', () => {
+        const stepType = step.getAttribute('data-step');
+        const data = frameworkData[stepType];
+        
+        if (data) {
+          modalTitle.textContent = data.title;
+          modalContent.innerHTML = data.content;
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Services dropdown functionality
+    function initServicesDropdown() {
+      const servicesButton = document.querySelector('.dropdown button');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+      
+      if (servicesButton && dropdownMenu) {
+        // Toggle dropdown on click
+        servicesButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropdownMenu.classList.toggle('show');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!servicesButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+          }
+        });
+        
+        // Close dropdown when clicking on a service link
+        dropdownMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            dropdownMenu.classList.remove('show');
+          });
+        });
+      }
+    }
+
+    // Initialize dropdown functionality
+    initServicesDropdown();
+  </script>
+</body>
+</html>
