@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outta The Box Marketing - CMS Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        deepblue: '#0A2540',
+                        teal: '#008080',
+                        coral: '#FF6F3C',
+                        charcoal: '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+        
+        .admin-sidebar {
+            background: linear-gradient(135deg, #0A2540 0%, #008080 100%);
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .content-card:hover {
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #008080 0%, #FF6F3C 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 128, 128, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #f8fafc;
+            color: #374151;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background: #e5e7eb;
+            transform: translateY(-1px);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #008080;
+            box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.1);
+        }
+        
+        .form-textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 14px;
+            min-height: 120px;
+            resize: vertical;
+            transition: all 0.3s ease;
+        }
+        
+        .form-textarea:focus {
+            outline: none;
+            border-color: #008080;
+            box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.1);
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .status-published { background-color: #10b981; }
+        .status-draft { background-color: #f59e0b; }
+        .status-scheduled { background-color: #3b82f6; }
+        
+        .preview-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .preview-content {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="admin-sidebar w-64 text-white p-6">
+            <div class="mb-8">
+                <h1 class="text-2xl font-bold mb-2">Outta The Box</h1>
+                <h2 class="text-lg font-semibold text-teal-200">Marketing CMS</h2>
+            </div>
+            
+            <nav class="space-y-2">
+                <a href="#dashboard" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200 active-nav" data-section="dashboard">
+                    📊 Dashboard
+                </a>
+                <a href="#blog-posts" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200" data-section="blog-posts">
+                    📝 Blog Posts
+                </a>
+                <a href="#case-studies" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200" data-section="case-studies">
+                    📈 Case Studies
+                </a>
+                <a href="#services" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200" data-section="services">
+                    ⚙️ Services
+                </a>
+                <a href="#testimonials" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200" data-section="testimonials">
+                    💬 Testimonials
+                </a>
+                <a href="#seo" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200" data-section="seo">
+                    🔍 SEO Settings
+                </a>
+                <a href="#settings" class="block py-3 px-4 rounded-lg hover:bg-white/10 transition-colors duration-200" data-section="settings">
+                    ⚙️ Settings
+                </a>
+            </nav>
+            
+            <div class="mt-8 pt-6 border-t border-white/20">
+                <a href="../index.html" target="_blank" class="block py-2 px-4 text-sm text-teal-200 hover:text-white transition-colors duration-200">
+                    👁️ View Website
+                </a>
+                <a href="#" id="exportData" class="block py-2 px-4 text-sm text-teal-200 hover:text-white transition-colors duration-200">
+                    📤 Export Data
+                </a>
+                <a href="#" id="importData" class="block py-2 px-4 text-sm text-teal-200 hover:text-white transition-colors duration-200">
+                    📥 Import Data
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto">
+            <!-- Header -->
+            <header class="bg-white border-b border-gray-200 px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <h2 id="page-title" class="text-2xl font-bold text-gray-900">Dashboard</h2>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm text-gray-500">Last saved: <span id="last-saved">Never</span></span>
+                        <button id="saveAll" class="btn-primary">💾 Save All Changes</button>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Content Area -->
+            <main class="p-6">
+                <!-- Dashboard Section -->
+                <div id="dashboard-section" class="content-section">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <div class="content-card p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Total Blog Posts</p>
+                                    <p class="text-3xl font-bold text-gray-900" id="total-blogs">5</p>
+                                </div>
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">📝</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Case Studies</p>
+                                    <p class="text-3xl font-bold text-gray-900" id="total-cases">4</p>
+                                </div>
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">📈</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Services</p>
+                                    <p class="text-3xl font-bold text-gray-900">6</p>
+                                </div>
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">⚙️</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600">Website Views</p>
+                                    <p class="text-3xl font-bold text-gray-900" id="website-views">1,247</p>
+                                </div>
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">👁️</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="content-card p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Activity</h3>
+                            <div class="space-y-3" id="recent-activity">
+                                <div class="flex items-center space-x-3">
+                                    <span class="status-indicator status-published"></span>
+                                    <span class="text-sm text-gray-600">Published "AI Marketing Agency Pricing Guide"</span>
+                                    <span class="text-xs text-gray-400 ml-auto">2 hours ago</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="status-indicator status-draft"></span>
+                                    <span class="text-sm text-gray-600">Updated "LuxeSneakers" case study</span>
+                                    <span class="text-xs text-gray-400 ml-auto">1 day ago</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="status-indicator status-published"></span>
+                                    <span class="text-sm text-gray-600">Added new service pricing</span>
+                                    <span class="text-xs text-gray-400 ml-auto">3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
+                            <div class="space-y-3">
+                                <button class="w-full btn-secondary text-left" onclick="showSection('blog-posts')">
+                                    ➕ Add New Blog Post
+                                </button>
+                                <button class="w-full btn-secondary text-left" onclick="showSection('case-studies')">
+                                    ➕ Add New Case Study
+                                </button>
+                                <button class="w-full btn-secondary text-left" onclick="showSection('testimonials')">
+                                    ➕ Add New Testimonial
+                                </button>
+                                <button class="w-full btn-secondary text-left" onclick="showSection('seo')">
+                                    🔍 Update SEO Settings
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Posts Section -->
+                <div id="blog-posts-section" class="content-section hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Blog Posts Management</h3>
+                        <button id="add-blog-post" class="btn-primary">➕ Add New Post</button>
+                    </div>
+                    
+                    <div class="content-card p-6">
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b border-gray-200">
+                                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Title</th>
+                                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Status</th>
+                                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Published</th>
+                                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Views</th>
+                                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="blog-posts-table">
+                                    <!-- Blog posts will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Studies Section -->
+                <div id="case-studies-section" class="content-section hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Case Studies Management</h3>
+                        <button id="add-case-study" class="btn-primary">➕ Add New Case Study</button>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="case-studies-grid">
+                        <!-- Case studies will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Services Section -->
+                <div id="services-section" class="content-section hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Services Management</h3>
+                        <button id="add-service" class="btn-primary">➕ Add New Service</button>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="services-grid">
+                        <!-- Services will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Testimonials Section -->
+                <div id="testimonials-section" class="content-section hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Testimonials Management</h3>
+                        <button id="add-testimonial" class="btn-primary">➕ Add New Testimonial</button>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonials-grid">
+                        <!-- Testimonials will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- SEO Section -->
+                <div id="seo-section" class="content-section hidden">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">SEO Settings</h3>
+                        <p class="text-gray-600">Manage your website's SEO configuration and meta data</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="content-card p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Global SEO Settings</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Site Title</label>
+                                    <input type="text" class="form-input" id="site-title" value="Outta The Box Marketing">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Site Description</label>
+                                    <textarea class="form-textarea" id="site-description">AI-Powered Digital Marketing Solutions for D2C Brands</textarea>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Keywords</label>
+                                    <input type="text" class="form-input" id="site-keywords" value="digital marketing, AI marketing, D2C marketing, marketing automation">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Analytics & Tracking</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Google Analytics ID</label>
+                                    <input type="text" class="form-input" id="ga-id" placeholder="G-XXXXXXXXXX">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Google Search Console</label>
+                                    <input type="text" class="form-input" id="gsc-verification" placeholder="Verification code">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Facebook Pixel ID</label>
+                                    <input type="text" class="form-input" id="fb-pixel" placeholder="123456789012345">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Settings Section -->
+                <div id="settings-section" class="content-section hidden">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900">System Settings</h3>
+                        <p class="text-gray-600">Configure your CMS and website settings</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="content-card p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">General Settings</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Website URL</label>
+                                    <input type="url" class="form-input" id="website-url" value="https://pantmayank81.github.io/outta-the-box-marketing/">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Admin Email</label>
+                                    <input type="email" class="form-input" id="admin-email" value="pant.mayank@gmail.com">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Auto-save Interval (minutes)</label>
+                                    <input type="number" class="form-input" id="autosave-interval" value="5" min="1" max="60">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Backup & Export</h4>
+                            <div class="space-y-4">
+                                <button class="w-full btn-secondary" id="backup-data">
+                                    💾 Create Backup
+                                </button>
+                                <button class="w-full btn-secondary" id="export-content">
+                                    📤 Export All Content
+                                </button>
+                                <button class="w-full btn-secondary" id="import-content">
+                                    📥 Import Content
+                                </button>
+                                <input type="file" id="import-file" accept=".json" class="hidden">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="preview-modal">
+        <div class="preview-content">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold">Content Preview</h3>
+                <button id="close-preview" class="text-gray-500 hover:text-gray-700">✕</button>
+            </div>
+            <div id="preview-content">
+                <!-- Preview content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="cms.js"></script>
+</body>
+</html>
