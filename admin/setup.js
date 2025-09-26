@@ -279,7 +279,7 @@ if (!fs.existsSync(dataFile)) {
             updatedAt: new Date().toISOString()
         },
         settings: {
-            websiteUrl: "https://pantmayank81.github.io/outta-the-box-marketing/",
+            websiteUrl: "https://otbmarketing.in/",
             adminEmail: "pant.mayank@gmail.com",
             autosaveInterval: 5,
             updatedAt: new Date().toISOString()

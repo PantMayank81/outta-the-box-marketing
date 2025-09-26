@@ -1,3 +1,4 @@
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -10,6 +11,8 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
+app.use(express.static('.'));
+app.use('/admin', express.static('.'));
 
 // Data file path
 const DATA_FILE = path.join(__dirname, 'data', 'cms-data.json');
@@ -36,7 +39,7 @@ if (!fs.existsSync(DATA_FILE)) {
             fbPixel: ""
         },
         settings: {
-            websiteUrl: "https://pantmayank81.github.io/outta-the-box-marketing/",
+            websiteUrl: "https://otbmarketing.in/",
             adminEmail: "pant.mayank@gmail.com",
             autosaveInterval: 5
         },

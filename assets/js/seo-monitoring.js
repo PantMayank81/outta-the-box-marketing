@@ -312,8 +312,8 @@ class SEOMonitoringDashboard {
     
     // Check Internal Linking
     checkInternalLinking() {
-        const internalLinks = document.querySelectorAll('a[href^="/"], a[href*="outtatheboxmarketing.com"]');
-        const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="outtatheboxmarketing.com"])');
+        const internalLinks = document.querySelectorAll('a[href^="/"], a[href*="otbmarketing.in"]');
+        const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="otbmarketing.in"])');
         
         const internalLinkRatio = internalLinks.length / (internalLinks.length + externalLinks.length);
         

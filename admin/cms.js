@@ -288,7 +288,7 @@ class OuttaTheBoxCMS {
                 fbPixel: ""
             },
             settings: {
-                websiteUrl: "https://pantmayank81.github.io/outta-the-box-marketing/",
+                websiteUrl: "https://otbmarketing.in/",
                 adminEmail: "pant.mayank@gmail.com",
                 autosaveInterval: 5
             }

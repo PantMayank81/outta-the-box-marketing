@@ -1,0 +1,292 @@
+{
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "Best AI Marketing Consultant India vs Traditional Agency: Complete Comparison 2025",
+      "slug": "best-ai-marketing-consultant-india",
+      "status": "published",
+      "publishedAt": "2024-01-15",
+      "views": 1247,
+      "content": "This comprehensive guide compares AI-powered marketing consultants with traditional agencies...",
+      "metaDescription": "Compare AI marketing consultants vs traditional agencies in India. Get insights on pricing, results, and ROI for D2C brands.",
+      "keywords": "AI marketing consultant India, digital marketing agency, marketing automation",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 2,
+      "title": "Marketing Automation Setup Cost vs ROI: Complete Analysis for D2C Brands",
+      "slug": "marketing-automation-setup-cost",
+      "status": "published",
+      "publishedAt": "2024-01-10",
+      "views": 892,
+      "content": "This detailed analysis breaks down the true cost of marketing automation...",
+      "metaDescription": "Complete cost analysis of marketing automation for D2C brands. ROI projections, implementation costs, and success stories.",
+      "keywords": "marketing automation cost, D2C marketing, automation ROI",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 3,
+      "title": "Hire Digital Marketing Strategist vs Build In-House Team: 2025 Complete Guide",
+      "slug": "hire-digital-marketing-strategist",
+      "status": "published",
+      "publishedAt": "2024-01-05",
+      "views": 1156,
+      "content": "This comprehensive guide helps you decide between hiring a consultant or building an in-house team...",
+      "metaDescription": "Complete guide to hiring digital marketing strategist vs building in-house team. Cost analysis, pros/cons, decision framework.",
+      "keywords": "hire digital marketing strategist, in-house vs consultant, marketing team",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 4,
+      "title": "Performance Marketing Audit: 15 Critical Issues Killing Your D2C ROI (+ Solutions)",
+      "slug": "performance-marketing-audit",
+      "status": "published",
+      "publishedAt": "2024-01-01",
+      "views": 743,
+      "content": "This audit guide reveals the 15 most common issues that kill D2C marketing ROI...",
+      "metaDescription": "Complete performance marketing audit guide. 15 critical issues and solutions for D2C brands to improve ROI.",
+      "keywords": "performance marketing audit, D2C marketing, marketing ROI",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 5,
+      "title": "AI Marketing Agency Pricing: What You Should Pay for Real Results in 2025",
+      "slug": "ai-marketing-agency-pricing",
+      "status": "published",
+      "publishedAt": "2023-12-28",
+      "views": 1034,
+      "content": "This pricing guide provides complete transparency on AI marketing agency costs...",
+      "metaDescription": "Complete AI marketing agency pricing guide. Transparent cost breakdown, value justification, and ROI expectations.",
+      "keywords": "AI marketing agency pricing, marketing consultant cost, digital marketing pricing",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": 1,
+      "title": "LuxeSneakers",
+      "category": "Fashion & Beauty",
+      "duration": "6 months",
+      "result": "48h Sellout",
+      "description": "Sold out our entire collection in 48 hours after implementing their AI-driven campaign strategy.",
+      "client": "Sarah Chen, Founder of LuxeSneakers",
+      "metrics": {
+        "revenue": "₹2.5Cr",
+        "growth": "400%",
+        "roi": "1200%"
+      },
+      "image": "LuxeSneakers.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 2,
+      "title": "EcoGlow Skincare",
+      "category": "Health & Wellness",
+      "duration": "4 months",
+      "result": "3x Engagement",
+      "description": "Tripled our social media engagement and doubled our conversion rates with their content strategy.",
+      "client": "Dr. Priya Sharma, CEO of EcoGlow",
+      "metrics": {
+        "engagement": "300%",
+        "conversion": "200%",
+        "revenue": "₹1.8Cr"
+      },
+      "image": "EcoGlow Skincare.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 3,
+      "title": "Artisan Coffee Co",
+      "category": "Food & Beverage",
+      "duration": "8 months",
+      "result": "2x Sales Growth",
+      "description": "Doubled our online sales and established a strong brand presence in the competitive coffee market.",
+      "client": "Rajesh Kumar, Founder of Artisan Coffee Co",
+      "metrics": {
+        "sales": "200%",
+        "brand": "150%",
+        "revenue": "₹3.2Cr"
+      },
+      "image": "Artisan Coffee Co.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 4,
+      "title": "TechFlow Solutions",
+      "category": "Technology & SaaS",
+      "duration": "12 months",
+      "result": "5x Lead Generation",
+      "description": "Increased our lead generation by 500% and reduced customer acquisition cost by 60%.",
+      "client": "Amit Patel, CMO of TechFlow Solutions",
+      "metrics": {
+        "leads": "500%",
+        "cac": "-60%",
+        "revenue": "₹4.1Cr"
+      },
+      "image": "TechFlow Solutions.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Digital Marketing Strategy & Consulting",
+      "description": "Data-driven marketing strategies tailored to your business goals",
+      "pricing": "Starting from ₹50K",
+      "features": [
+        "Strategic Planning",
+        "Market Analysis",
+        "Competitive Research",
+        "ROI Optimization"
+      ],
+      "image": "Digital Marketing Strategy & Consulting.png",
+      "status": "active",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 2,
+      "name": "AI-Powered Marketing Automation",
+      "description": "Intelligent automation systems that scale your marketing efforts",
+      "pricing": "Starting from ₹75K",
+      "features": [
+        "Workflow Automation",
+        "Lead Nurturing",
+        "Email Marketing",
+        "CRM Integration"
+      ],
+      "image": "AI-Powered Marketing Automation.png",
+      "status": "active",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 3,
+      "name": "SEO & Content Marketing",
+      "description": "Compelling brand storytelling that drives organic traffic",
+      "pricing": "Starting from ₹40K",
+      "features": [
+        "Content Strategy",
+        "SEO Optimization",
+        "Blog Management",
+        "Link Building"
+      ],
+      "image": "SEO & Content Marketing.png",
+      "status": "active",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 4,
+      "name": "PPC & Paid Media Management",
+      "description": "Performance-driven advertising across all digital channels",
+      "pricing": "Starting from ₹60K",
+      "features": [
+        "Google Ads",
+        "Facebook Ads",
+        "LinkedIn Ads",
+        "Campaign Optimization"
+      ],
+      "image": "PPC & Paid Media Management.png",
+      "status": "active",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 5,
+      "name": "Marketing Technology Integration",
+      "description": "Seamless tech stack integration for maximum efficiency",
+      "pricing": "Starting from ₹80K",
+      "features": [
+        "MarTech Stack",
+        "API Integration",
+        "Data Analytics",
+        "Tool Optimization"
+      ],
+      "image": "Marketing Technology Integration.png",
+      "status": "active",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 6,
+      "name": "Growth Hacking & Conversion Optimization",
+      "description": "ROI measurement and optimization for sustainable growth",
+      "pricing": "Starting from ₹70K",
+      "features": [
+        "A/B Testing",
+        "Conversion Optimization",
+        "Growth Experiments",
+        "Performance Analysis"
+      ],
+      "image": "Growth Hacking & Conversion Optimization.png",
+      "status": "active",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "company": "Founder of LuxeSneakers",
+      "quote": "Sold out our entire collection in 48 hours after implementing their AI-driven campaign strategy.",
+      "result": "48h Sellout",
+      "image": "LuxeSneakers.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Priya Sharma",
+      "company": "CEO of EcoGlow",
+      "quote": "Tripled our social media engagement and doubled our conversion rates with their content strategy.",
+      "result": "3x Engagement",
+      "image": "EcoGlow Skincare.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    },
+    {
+      "id": 3,
+      "name": "Rajesh Kumar",
+      "company": "Founder of Artisan Coffee Co",
+      "quote": "Doubled our online sales and established a strong brand presence in the competitive coffee market.",
+      "result": "2x Sales Growth",
+      "image": "Artisan Coffee Co.png",
+      "status": "published",
+      "createdAt": "2025-09-26T10:07:58.363Z",
+      "updatedAt": "2025-09-26T10:07:58.363Z"
+    }
+  ],
+  "seoSettings": {
+    "siteTitle": "Outta The Box Marketing",
+    "siteDescription": "AI-Powered Digital Marketing Solutions for D2C Brands",
+    "siteKeywords": "digital marketing, AI marketing, D2C marketing, marketing automation",
+    "gaId": "",
+    "gscVerification": "",
+    "fbPixel": "",
+    "updatedAt": "2025-09-26T10:07:58.363Z"
+  },
+  "settings": {
+    "websiteUrl": "https://otbmarketing.in/",
+    "adminEmail": "pant.mayank@gmail.com",
+    "autosaveInterval": 5,
+    "updatedAt": "2025-09-26T10:07:58.363Z"
+  },
+  "lastModified": "2025-09-26T10:07:58.363Z"
+}
