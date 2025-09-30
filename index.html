@@ -230,8 +230,90 @@ OPTIMIZATIONS IMPLEMENTED:
   <!-- Defer non-critical JavaScript -->
   <script src="https://cdn.tailwindcss.com" defer></script>
   
-  <!-- Emergency Homepage Restoration CSS - Load AFTER Tailwind to override -->
-  <link rel="stylesheet" href="/assets/css/homepage-fix.css">
+  <!-- Emergency Homepage Restoration CSS - Inline with maximum specificity -->
+  <style>
+    /* Force override with maximum specificity */
+    body .hero, html body .hero, .hero.hero {
+      background: linear-gradient(135deg, #0A2540 0%, #1a3a5c 100%) !important;
+      color: white !important;
+      padding: 8rem 2rem 6rem !important;
+      text-align: center !important;
+      position: relative !important;
+      min-height: 80vh !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    
+    body .hero h1, html body .hero h1, .hero.hero h1 {
+      font-size: clamp(3rem, 6vw, 5rem) !important;
+      font-weight: 800 !important;
+      line-height: 1.1 !important;
+      margin: 0 0 2rem !important;
+      color: white !important;
+    }
+    
+    body .metrics-container, html body .metrics-container {
+      display: flex !important;
+      justify-content: center !important;
+      gap: 2rem !important;
+      margin: 4rem 0 !important;
+      flex-wrap: wrap !important;
+    }
+    
+    body .metric-card, html body .metric-card {
+      background: rgba(255, 255, 255, 0.1) !important;
+      backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 16px !important;
+      padding: 2rem 1.5rem !important;
+      text-align: center !important;
+      min-width: 180px !important;
+    }
+    
+    body .metric-number, html body .metric-number {
+      font-size: 3rem !important;
+      font-weight: 800 !important;
+      color: #FF6F3C !important;
+      display: block !important;
+      line-height: 1 !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    body .metric-label, html body .metric-label {
+      font-size: 1rem !important;
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500 !important;
+    }
+    
+    body .cta-primary, html body .cta-primary {
+      background: linear-gradient(135deg, #FF6F3C 0%, #e55a2b 100%) !important;
+      color: white !important;
+      padding: 1.5rem 3rem !important;
+      border: none !important;
+      border-radius: 50px !important;
+      font-size: 1.2rem !important;
+      font-weight: 700 !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      cursor: pointer !important;
+      box-shadow: 0 10px 30px rgba(255, 111, 60, 0.3) !important;
+      margin: 0.5rem !important;
+    }
+    
+    @media (max-width: 768px) {
+      body .hero, html body .hero, .hero.hero {
+        padding: 4rem 1rem 3rem !important;
+        min-height: 70vh !important;
+      }
+      
+      body .metrics-container, html body .metrics-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.5rem !important;
+      }
+    }
+  </style>
   
   <!-- Load SEO Analytics and Automation Scripts asynchronously -->
   <script src="assets/js/seo-analytics.js" async></script>
