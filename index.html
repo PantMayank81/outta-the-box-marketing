@@ -4,719 +4,1053 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Critical CSS Inline for Core Web Vitals -->
+  <style>
+    /* Critical above-fold styles */
+    body { 
+      font-family: 'Inter', sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      line-height: 1.6;
+    }
+    .hero-section { 
+      min-height: 60vh; 
+      background: linear-gradient(135deg, #0A2540 0%, #008080 100%);
+      position: relative;
+    }
+    .nav-header { 
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      z-index: 1000; 
+      background: rgba(255,255,255,0.95); 
+      backdrop-filter: blur(10px);
+      height: 80px;
+    }
+    h1, h2, h3, h4 { 
+      font-family: 'Space Grotesk', sans-serif; 
+      font-weight: 700;
+    }
+    /* Critical layout styles */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    .text-deepblue { color: #0A2540; }
+    .text-teal { color: #008080; }
+    .text-coral { color: #FF6F3C; }
+    .bg-deepblue { background-color: #0A2540; }
+    .bg-teal { background-color: #008080; }
+    .bg-coral { background-color: #FF6F3C; }
+  </style>
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&display=swap" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="assets/images/Colorful Brain Digital World Technology Logo.png" as="image">
+  
+  <!-- DNS Prefetch for External Resources -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//connect.facebook.net">
+  
   <!-- SEO Meta Tags -->
-    <title>ACCELERATE Framework™ | D2C Marketing Automation | Outta The Box Marketing</title>
-    <meta name="description" content="Transform D2C marketing with our proprietary ACCELERATE Framework™. 300% revenue growth, 48h sellouts. AI-powered systematic marketing for ambitious D2C founders in India & globally.">
-    <meta name="keywords" content="ACCELERATE Framework, D2C marketing automation, AI marketing consultant India, systematic marketing growth, D2C growth framework, marketing automation for startups">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <title>AI Marketing Consultant India | Outta The Box Marketing - From ICP to ROI</title>
+  <meta name="description" content="Leading AI-powered digital marketing consultant in India. Helping D2C brands achieve 3x engagement, 2x sales growth through human-first AI strategies. Book your growth call today.">
+  <meta name="keywords" content="AI marketing consultant India, digital marketing strategist, marketing automation services, D2C marketing expert, performance marketing audit, AI marketing agency pricing">
+  <meta name="author" content="Outta The Box Marketing">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://otbmarketing.in/">
   
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="ACCELERATE Framework™ | D2C Marketing Automation">
-    <meta property="og:description" content="Systematic D2C marketing that delivers 300% revenue growth and 48h sellouts. AI-powered ACCELERATE Framework™ for ambitious founders.">
+  <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Marketing Consultant India | Outta The Box Marketing">
+  <meta property="og:description" content="Leading AI-powered digital marketing consultant in India. Helping D2C brands achieve 3x engagement, 2x sales growth through human-first AI strategies.">
   <meta property="og:url" content="https://otbmarketing.in/">
-    <meta property="og:image" content="https://otbmarketing.in/assets/images/accelerate-framework-og.jpg">
-    
-    <!-- Schema Markup -->
+  <meta property="og:image" content="https://otbmarketing.in/assets/images/og-image.png">
+  <meta property="og:site_name" content="Outta The Box Marketing">
+  <meta property="og:locale" content="en_IN">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Marketing Consultant India | Outta The Box Marketing">
+  <meta name="twitter:description" content="Leading AI-powered digital marketing consultant in India. Helping D2C brands achieve 3x engagement, 2x sales growth.">
+  <meta name="twitter:image" content="https://otbmarketing.in/assets/images/twitter-card.png">
+  
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-        "@type": "ProfessionalService",
+    "@type": "MarketingConsultancy",
     "name": "Outta The Box Marketing",
-        "description": "AI-powered marketing automation and ACCELERATE Framework™ for D2C brands",
     "url": "https://otbmarketing.in",
+    "logo": "https://otbmarketing.in/assets/images/Colorful Brain Digital World Technology Logo.png",
+    "description": "AI-powered digital marketing consultancy specializing in D2C brand growth through human-first AI strategies",
     "founder": {
       "@type": "Person",
-            "name": "Marketing Leadership Team",
-            "jobTitle": "Digital Marketing Strategists"
-        },
-        "serviceArea": ["India", "Global"],
+      "name": "Digital Marketing Strategist",
+      "jobTitle": "AI Marketing Expert & Digital Marketing Strategist",
+      "worksFor": "Outta The Box Marketing"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "serviceArea": "India",
     "services": [
-            "ACCELERATE Framework Implementation",
-            "AI Marketing Automation",
+      "AI Marketing Consultation",
+      "Digital Marketing Strategy",
+      "Marketing Automation",
+      "Performance Marketing Audit",
       "D2C Growth Strategy",
-            "Marketing Campaign Optimization",
-            "Lead Generation Systems"
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "47"
-        },
-        "offers": {
-            "@type": "Offer",
-            "description": "D2C Marketing Automation Services",
-            "priceCurrency": "INR",
-            "price": "50000",
-            "priceValidUntil": "2025-12-31"
-        }
+      "Conversion Rate Optimization"
+    ],
+    "priceRange": "₹₹₹",
+    "telephone": "+91 9819518465",
+    "email": "sales@otbmarketing.in",
+    "sameAs": [
+      "https://www.linkedin.com/company/outta-the-box-marketing",
+      "https://twitter.com/outtatheboxmktg"
+    ]
   }
   </script>
   
-    <style>
-        :root {
-            --primary-blue: #0A2540;
-            --teal-accent: #008080;
-            --coral-accent: #FF6F3C;
-            --charcoal: #333333;
-            --light-gray: #F8FAFC;
-            --white: #FFFFFF;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Load SEO Analytics and Automation Scripts -->
+  <script src="assets/js/seo-analytics.js"></script>
+  <script src="assets/js/content-automation.js"></script>
+  <script src="assets/js/seo-monitoring.js"></script>
+  <script src="assets/js/cms-integration.js"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            deepblue: '#0A2540',
+            teal: '#008080',
+            coral: '#FF6F3C',
+            charcoal: '#333333',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.8s ease-in-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'pulse-slow': 'pulse 3s infinite',
+            'bounce-slow': 'bounce 2s infinite',
+          }
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: var(--charcoal);
-            overflow-x: hidden;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        
-        /* Typography */
-        h1, h2, h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            color: var(--primary-blue);
-        }
-        
-        h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; }
-        h2 { font-size: clamp(2rem, 4vw, 3rem); }
-        h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
-            padding: 6rem 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.5" fill="%23008080" opacity="0.1"/></svg>');
-            opacity: 0.3;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .hero-badge {
-            background: var(--teal-accent);
-            color: var(--white);
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            display: inline-block;
-            animation: fadeInUp 0.6s ease-out;
-        }
-        
-        .hero-title {
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.6s ease-out 0.2s both;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.25rem;
-            color: var(--teal-accent);
-            font-weight: 600;
-            margin-bottom: 2rem;
-            animation: fadeInUp 0.6s ease-out 0.4s both;
-        }
-        
-        .hero-description {
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-            animation: fadeInUp 0.6s ease-out 0.6s both;
-        }
-        
-        .hero-metrics {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 3rem 0;
-            flex-wrap: wrap;
-            animation: fadeInUp 0.6s ease-out 0.8s both;
-        }
-        
-        .metric-card {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            min-width: 140px;
-            transition: var(--transition);
-        }
-        
-        .metric-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        
-        .metric-card.featured {
-            background: var(--coral-accent);
-            color: var(--white);
-        }
-        
-        .metric-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-        }
-        
-        .metric-label {
-            font-size: 0.9rem;
-            font-weight: 600;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+
+    /* Smooth scroll behavior */
+    html { scroll-behavior: smooth; }
+
+    /* Mobile menu animations */
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    /* Dropdown animations */
+    .dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+    }
+    .dropdown:hover .dropdown-menu,
+    .dropdown-menu.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* Active section highlighting */
+    .nav-link.active {
+      color: #008080;
+      position: relative;
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #008080, #FF6F3C);
+    }
+
+    /* Custom animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Trust signal animations */
+    .trust-badge {
+      animation: pulse-slow 2s infinite;
+    }
+
+    /* CTA button hover effects */
     .cta-primary {
-            display: inline-block;
-            background: var(--coral-accent);
-            color: var(--white);
-            padding: 1.5rem 3rem;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 700;
-            font-size: 1.2rem;
-            transition: var(--transition);
-            box-shadow: var(--shadow);
-            animation: fadeInUp 0.6s ease-out 1s both;
-        }
-        
+      background: linear-gradient(135deg, #008080, #FF6F3C);
+      transition: all 0.3s ease;
+    }
     .cta-primary:hover {
       transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 111, 60, 0.3);
-            background: #ff8a5b;
-        }
-        
-        /* Services Section */
-        .services {
-            padding: 6rem 0;
-            background: var(--white);
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        
-        .section-title {
-            margin-bottom: 1rem;
-        }
-        
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: var(--teal-accent);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .service-card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 2px solid transparent;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border-color: var(--teal-accent);
-        }
-        
-        .service-icon {
-            background: var(--coral-accent);
-            color: var(--white);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-        
-        .service-title {
-            font-size: 1.25rem;
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-        }
-        
-        .service-description {
-            color: var(--charcoal);
-            line-height: 1.7;
-        }
-        
-        /* Framework Section */
-        .framework {
-            padding: 6rem 0;
-            background: var(--light-gray);
-        }
-        
-        .framework-intro {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        
-        .framework-badge {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-        }
-        
-        .framework-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
-        }
-        
-        .framework-step {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-        
-        .framework-step:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .step-number {
-            background: var(--teal-accent);
-            color: var(--white);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-        
-        .step-title {
-            font-size: 1.1rem;
-            color: var(--primary-blue);
-            margin-bottom: 0.5rem;
-        }
-        
-        .step-description {
-            font-size: 0.9rem;
-            color: var(--charcoal);
-            opacity: 0.8;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 6rem 0;
-            background: var(--white);
-        }
-        
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .testimonial {
-            background: var(--light-gray);
-            padding: 2.5rem;
-            border-radius: 16px;
-            position: relative;
-        }
-        
-        .testimonial::before {
-            content: '"';
-            font-size: 4rem;
-            color: var(--coral-accent);
-            position: absolute;
-            top: 1rem;
-            left: 2rem;
-            font-family: serif;
-        }
-        
-        .testimonial-text {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-            margin-top: 1rem;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--primary-blue);
-        }
-        
-        .testimonial-company {
-            font-size: 0.9rem;
-            color: var(--teal-accent);
-        }
-        
-        /* CTA Section */
-        .final-cta {
-            padding: 6rem 0;
-            background: var(--primary-blue);
-            color: var(--white);
-            text-align: center;
-        }
-        
-        .final-cta h2,
-        .final-cta h3 {
-            color: var(--white);
-        }
-        
-        .cta-description {
-            font-size: 1.2rem;
-            margin: 1.5rem 0 3rem;
-            opacity: 0.9;
-        }
-        
-        .cta-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            margin: 0 1rem;
-            transition: var(--transition);
-            display: inline-block;
-        }
-        
-        .cta-secondary:hover {
-            background: var(--white);
-            color: var(--primary-blue);
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-metrics {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-            
-            .framework-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .services-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Performance Optimization */
-        .lazy-load {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .lazy-load.loaded {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+      box-shadow: 0 20px 40px rgba(0, 128, 128, 0.3);
+    }
+
+    /* Social proof carousel */
+    .carousel-container {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .carousel-content {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Urgency indicator */
+    .urgency-pulse {
+      animation: bounce-slow 1.5s infinite;
+    }
+
+    /* Testimonial video hover */
+    .testimonial-video:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Gradient animation for headline */
+    @keyframes gradient-x {
+      0%, 100% {
+        background-size: 200% 200%;
+        background-position: left center;
+      }
+      50% {
+        background-size: 200% 200%;
+        background-position: right center;
+      }
+    }
+    .animate-gradient-x {
+      animation: gradient-x 3s ease infinite;
+    }
+
+    /* Floating animation for trust badges */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Pulse animation for CTA button */
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(0, 128, 128, 0.3); }
+      50% { box-shadow: 0 0 30px rgba(0, 128, 128, 0.6); }
+    }
+    .pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    /* Hover effect for professional image */
+    .professional-image {
+      transition: all 0.3s ease;
+    }
+    .professional-image:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* FAQ accordion */
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-content.open {
+      max-height: 200px;
+    }
+  </style>
 </head>
+<body class="bg-gray-50 dark:bg-gray-900">
 
-<body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    Creators of the ACCELERATE Framework™
+   <!-- Enhanced Navbar -->
+   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-deepblue/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20">
+     <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-[80px]">
+       
+       <!-- Logo -->
+       <a href="index.html" class="flex items-center space-x-3 group">
+         <img src="assets/images/Colorful Brain Digital World Technology Logo.png" alt="Outta The Box Marketing Logo" class="h-[62px] w-auto group-hover:scale-105 transition-transform duration-300">
+         <div class="text-deepblue dark:text-white font-bold text-2xl group-hover:text-teal transition-colors duration-300 text-center">
+           <div>Outta the box</div>
+           <div>Marketing</div>
+         </div>
+       </a>
+
+       <!-- Desktop Navigation -->
+       <div class="hidden lg:flex items-center space-x-8">
+         <a href="index.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium relative">Home</a>
+         
+         <!-- Services Dropdown -->
+         <div class="dropdown relative">
+           <button class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium flex items-center space-x-1 bg-transparent border-none cursor-pointer">
+             <span>Services</span>
+             <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+             </svg>
+           </button>
+           <div class="dropdown-menu absolute top-full left-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 py-2">
+             <a href="services.html" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200 border-b border-gray-200 dark:border-gray-700">
+               <div class="font-semibold text-teal">View All Services</div>
+               <div class="text-sm text-gray-500">Complete services overview</div>
+             </a>
+             <a href="services.html#strategy" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">Digital Marketing Strategy & Consulting</div>
+               <div class="text-sm text-gray-500">Data-driven marketing strategies</div>
+             </a>
+             <a href="services.html#automation" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">AI-Powered Marketing Automation</div>
+               <div class="text-sm text-gray-500">Intelligent automation systems</div>
+             </a>
+             <a href="services.html#content" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">SEO & Content Marketing</div>
+               <div class="text-sm text-gray-500">Compelling brand storytelling</div>
+             </a>
+             <a href="services.html#ppc" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">PPC & Paid Media Management</div>
+               <div class="text-sm text-gray-500">Performance-driven advertising</div>
+             </a>
+             <a href="services.html#technology" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">Marketing Technology Integration</div>
+               <div class="text-sm text-gray-500">Seamless tech stack integration</div>
+             </a>
+             <a href="services.html#growth" class="block px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-teal/10 hover:text-teal transition-colors duration-200">
+               <div class="font-semibold">Growth Hacking & Conversion Optimization</div>
+               <div class="text-sm text-gray-500">ROI measurement & optimization</div>
+             </a>
+           </div>
          </div>
 
-                <h1 class="hero-title">Transform Your D2C Marketing with Systematic Growth</h1>
-                
-                <p class="hero-subtitle">The ACCELERATE Framework™ - From scattered tactics to systematic success</p>
-                
-                <p class="hero-description">
-                    We help ambitious D2C founders scale smarter with our proprietary <strong>ACCELERATE Framework™</strong> - 
-                    a systematic approach that has delivered <strong>300% revenue growth</strong>, <strong>48-hour sellouts</strong>, 
-                    and <strong>2x sales increases</strong> for brands across India and globally.
-                </p>
-                
-                <div class="hero-metrics">
-                    <div class="metric-card featured">
-                        <div class="metric-number">300%</div>
-                        <div class="metric-label">Revenue Growth</div>
-         </div>
-                    <div class="metric-card">
-                        <div class="metric-number">48h</div>
-                        <div class="metric-label">Product Sellouts</div>
+         <a href="about.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">About</a>
+         <a href="case-studies.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Case Studies</a>
+         <a href="blog.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Blog</a>
+         
+         <!-- CTA Button -->
+         <a href="contact.html" class="bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+           Let's Talk Growth
+         </a>
        </div>
-                    <div class="metric-card">
-                        <div class="metric-number">2x</div>
-                        <div class="metric-label">Sales Increase</div>
+
+       <!-- Mobile Menu Button & Dark Mode -->
+       <div class="flex items-center space-x-2">
+         <!-- Mobile CTA Button -->
+         <a href="contact.html" class="lg:hidden bg-gradient-to-r from-teal to-coral text-white px-4 py-2 rounded-lg font-bold text-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+           Get Started
+         </a>
+         
+         <button id="darkModeToggle" class="p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+           <span class="text-lg">🌙</span>
+         </button>
+         
+         <button id="mobileMenuToggle" class="lg:hidden p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors duration-300">
+           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+           </svg>
+         </button>
+       </div>
      </div>
+
+     <!-- Mobile Menu -->
+     <div id="mobileMenu" class="mobile-menu lg:hidden fixed top-[80px] right-0 w-full max-w-sm h-full bg-white dark:bg-gray-800 shadow-2xl border-l border-gray-200 dark:border-gray-700">
+       <div class="p-6 space-y-6 h-full overflow-y-auto">
+         <!-- Mobile Navigation Links -->
+         <div class="space-y-4">
+           <a href="index.html" class="flex items-center space-x-3 text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg py-2">
+             <span class="text-xl">🏠</span>
+             <span>Home</span>
+           </a>
+           
+           <div class="space-y-2">
+             <div class="flex items-center space-x-3 text-deepblue dark:text-white font-medium text-lg py-2">
+               <span class="text-xl">⚙️</span>
+               <a href="services.html" class="hover:text-teal transition-colors duration-200">Services</a>
+             </div>
+             <div class="pl-8 space-y-3">
+               <a href="services.html#strategy" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200 py-2">
+                 <div class="font-medium">Digital Marketing Strategy & Consulting</div>
+                 <div class="text-sm text-gray-500">Data-driven marketing strategies</div>
+               </a>
+               <a href="services.html#automation" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200 py-2">
+                 <div class="font-medium">AI-Powered Marketing Automation</div>
+                 <div class="text-sm text-gray-500">Intelligent automation systems</div>
+               </a>
+               <a href="services.html#content" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200 py-2">
+                 <div class="font-medium">SEO & Content Marketing</div>
+                 <div class="text-sm text-gray-500">Compelling brand storytelling</div>
+               </a>
+               <a href="services.html#ppc" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200 py-2">
+                 <div class="font-medium">PPC & Paid Media Management</div>
+                 <div class="text-sm text-gray-500">Performance-driven advertising</div>
+               </a>
+               <a href="services.html#technology" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200 py-2">
+                 <div class="font-medium">Marketing Technology Integration</div>
+                 <div class="text-sm text-gray-500">Seamless tech stack integration</div>
+               </a>
+               <a href="services.html#growth" class="block text-gray-600 dark:text-gray-300 hover:text-teal transition-colors duration-200 py-2">
+                 <div class="font-medium">Growth Hacking & Conversion Optimization</div>
+                 <div class="text-sm text-gray-500">ROI measurement & optimization</div>
+               </a>
+             </div>
+           </div>
+
+           <a href="about.html" class="flex items-center space-x-3 text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg py-2">
+             <span class="text-xl">👥</span>
+             <span>About</span>
+           </a>
+           <a href="case-studies.html" class="flex items-center space-x-3 text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg py-2">
+             <span class="text-xl">📊</span>
+             <span>Case Studies</span>
+           </a>
+           <a href="blog.html" class="flex items-center space-x-3 text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium text-lg py-2">
+             <span class="text-xl">📝</span>
+             <span>Blog</span>
+           </a>
+         </div>
+
+         <!-- Mobile Contact Actions -->
+         <div class="pt-6 border-t border-gray-200 dark:border-gray-700 space-y-4">
+           <a href="contact.html" class="block w-full bg-gradient-to-r from-teal to-coral text-white px-6 py-4 rounded-lg font-bold text-center hover:shadow-lg transition-all duration-300">
+             Let's Talk Growth
+           </a>
+           
+           <!-- Quick Contact Options -->
+           <div class="grid grid-cols-2 gap-3">
+             <a href="tel:+919819518465" class="flex items-center justify-center space-x-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-3 rounded-lg font-medium hover:bg-teal hover:text-white transition-all duration-300">
+               <span class="text-lg">📞</span>
+               <span class="text-sm">Call Now</span>
+             </a>
+             <a href="https://wa.me/919819518465" class="flex items-center justify-center space-x-2 bg-green-500 text-white px-4 py-3 rounded-lg font-medium hover:bg-green-600 transition-all duration-300">
+               <span class="text-lg">💬</span>
+               <span class="text-sm">WhatsApp</span>
+             </a>
+           </div>
+           
+           <!-- Social Links -->
+           <div class="flex justify-center space-x-4">
+             <a href="#" class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-teal hover:text-white transition-all duration-300">
+               <span class="text-lg">📱</span>
+             </a>
+             <a href="#" class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-teal hover:text-white transition-all duration-300">
+               <span class="text-lg">🐦</span>
+             </a>
+             <a href="#" class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-teal hover:text-white transition-all duration-300">
+               <span class="text-lg">💼</span>
+             </a>
+           </div>
+         </div>
        </div>
-                
-                <a href="#strategy-session" class="cta-primary">
-                    Get Your Free Growth Assessment
-                </a>
+     </div>
+   </nav>
+
+   <!-- High-Converting Hero Section -->
+   <section class="relative min-h-screen flex items-center overflow-hidden mt-[80px] bg-gradient-to-br from-slate-900 via-deepblue to-slate-800">
+     <!-- Professional Background -->
+     <div class="absolute inset-0">
+       <div class="absolute inset-0 bg-gradient-to-r from-deepblue/95 via-deepblue/80 to-transparent z-10"></div>
+       <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+     </div>
+
+     <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+       
+       <!-- Main Content -->
+       <div class="text-white space-y-8 max-w-4xl mx-auto">
+
+         <!-- Main Headline -->
+         <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+           From ICP to ROI — 
+           <span class="bg-gradient-to-r from-teal via-coral to-teal bg-clip-text text-transparent animate-gradient-x">
+             Growth Unlocked
+           </span>
+         </h1>
+         
+         <!-- Supporting Subheadline -->
+         <p class="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
+           We help D2C founders scale smarter with scroll-stopping campaigns, AI-qualified leads, and measurable conversion wins.
+         </p>
+
+         <!-- Social Proof Metrics -->
+         <div class="grid grid-cols-3 gap-6 py-6 max-w-2xl mx-auto">
+           <div class="text-center social-proof-metric">
+             <div class="text-3xl md:text-4xl font-bold text-teal mb-1">48h</div>
+             <div class="text-sm text-gray-300">Sneaker Sellout</div>
+           </div>
+           <div class="text-center social-proof-metric">
+             <div class="text-3xl md:text-4xl font-bold text-coral mb-1">3x</div>
+             <div class="text-sm text-gray-300">Engagement Uplift</div>
+           </div>
+           <div class="text-center social-proof-metric">
+             <div class="text-3xl md:text-4xl font-bold text-teal mb-1">2x</div>
+             <div class="text-sm text-gray-300">Sales in 6 Months</div>
+           </div>
+         </div>
+
+         <!-- CTA Buttons -->
+         <div class="flex flex-col sm:flex-row gap-4 justify-center">
+           <a href="contact.html" class="group relative bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-r from-coral to-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+             <span class="relative flex items-center justify-center space-x-2">
+               <span>Book My Growth Call 🚀</span>
+               <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+             </span>
+           </a>
+           <a href="case-studies.html" class="group border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform">
+             <span class="flex items-center justify-center space-x-2">
+               <span>See Case Studies</span>
+               <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+             </span>
+           </a>
+         </div>
+
+         <!-- Trust Indicators -->
+         <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-300">
+           <div class="flex items-center space-x-2">
+             <span class="text-teal">✓</span>
+             <span>Google Analytics Certified</span>
+           </div>
+           <div class="flex items-center space-x-2">
+             <span class="text-teal">✓</span>
+             <span>HubSpot Certified</span>
+           </div>
+           <div class="flex items-center space-x-2">
+             <span class="text-teal">✓</span>
+             <span>30-Day Money Back</span>
+           </div>
+         </div>
+
+         <!-- Urgency Indicator -->
+         <div class="inline-flex items-center space-x-2 bg-coral/20 backdrop-blur-sm rounded-full px-4 py-2 text-coral text-sm font-medium animate-pulse">
+           <span>⚡</span>
+           <span>Only 3 spots left this month</span>
+         </div>
+       </div>
+     </div>
+
+     <!-- Scroll Indicator -->
+     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+       <div class="flex flex-col items-center space-y-2">
+         <span class="text-sm">Scroll to see more</span>
+         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+         </svg>
        </div>
      </div>
    </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Five Core Services That Transform Your Marketing</h2>
-                <p class="section-subtitle">From scattered tactics to systematic growth through our proven ACCELERATE Framework™</p>
+   <!-- Client Logo Carousel -->
+   <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+     <div class="max-w-7xl mx-auto px-6">
+       <p class="text-center text-gray-600 dark:text-gray-400 text-sm font-medium mb-6">Trusted by leading D2C brands</p>
+       <div class="carousel-container">
+         <div class="carousel-content flex items-center space-x-12">
+           <div class="flex items-center space-x-12">
+             <div class="text-2xl font-bold text-gray-300">Brand A</div>
+             <div class="text-2xl font-bold text-gray-300">Brand B</div>
+             <div class="text-2xl font-bold text-gray-300">Brand C</div>
+             <div class="text-2xl font-bold text-gray-300">Brand D</div>
+             <div class="text-2xl font-bold text-gray-300">Brand E</div>
+             <div class="text-2xl font-bold text-gray-300">Brand F</div>
+             <div class="text-2xl font-bold text-gray-300">Brand G</div>
+             <div class="text-2xl font-bold text-gray-300">Brand H</div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- Service Overview -->
+   <section class="py-20 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+     <div class="max-w-7xl mx-auto px-6">
+       <div class="text-center mb-16">
+         <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+           How We Drive Growth
+         </h2>
+         <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+           Five core services that transform your marketing from good to exceptional.
+         </p>
        </div>
 
-            <div class="services-grid">
-                <div class="service-card lazy-load">
-                    <div class="service-icon">📊</div>
-                    <h3 class="service-title">ACCELERATE Framework™ Implementation</h3>
-                    <p class="service-description">Systematic 10-step methodology that transforms scattered marketing into a predictable growth engine. Proven to deliver 300% revenue increases through structured implementation.</p>
-        </div>
-
-                <div class="service-card lazy-load">
-                    <div class="service-icon">🤖</div>
-                    <h3 class="service-title">AI-Powered Marketing Systems</h3>
-                    <p class="service-description">Advanced automation that works 24/7 to qualify leads, personalize experiences, and optimize campaigns. Scale your marketing without scaling your team.</p>
-        </div>
-
-                <div class="service-card lazy-load">
-                    <div class="service-icon">🎯</div>
-                    <h3 class="service-title">Conversion-Focused Creative</h3>
-                    <p class="service-description">Scroll-stopping campaigns that convert browsers to buyers. Our creative approach combines psychological triggers with systematic testing for maximum ROI.</p>
-        </div>
-
-                <div class="service-card lazy-load">
-                    <div class="service-icon">📈</div>
-                    <h3 class="service-title">Performance Measurement & Optimization</h3>
-                    <p class="service-description">Data-driven insights that prove value and guide decisions. Real-time dashboards, ROI tracking, and continuous optimization for sustained growth.</p>
-        </div>
-
-                <div class="service-card lazy-load">
-                    <div class="service-icon">⚡</div>
-                    <h3 class="service-title">Rapid Experimentation & Scaling</h3>
-                    <p class="service-description">Fast-track your growth with systematic testing and scaling strategies. Identify what works quickly and amplify successful campaigns for maximum impact.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <!-- Strategy & Consulting -->
+        <div class="group">
+          <div class="relative h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/Strategy & Consulting.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+              <p class="text-sm opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-300 delay-100">Data-driven marketing strategies that deliver measurable results</p>
             </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-4 mb-2 text-center">Strategy & Consulting</h3>
+        </div>
+
+        <!-- Technology & Automation -->
+        <div class="group">
+          <div class="relative h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/Technology & Automation.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+              <p class="text-sm opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-300 delay-100">AI-powered marketing systems that work 24/7</p>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-4 mb-2 text-center">Technology & Automation</h3>
+        </div>
+
+        <!-- Content & Creative -->
+        <div class="group">
+          <div class="relative h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/Content & Creative.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+              <p class="text-sm opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-300 delay-100">Scroll-stopping creative that converts browsers to buyers</p>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-4 mb-2 text-center">Content & Creative</h3>
+        </div>
+
+        <!-- Performance & Analytics -->
+        <div class="group">
+          <div class="relative h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/Performance & Analytics.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+              <p class="text-sm opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-300 delay-100">ROI measurement and optimization that proves value</p>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-4 mb-2 text-center">Performance & Analytics</h3>
+        </div>
+
+        <!-- Growth Hacking -->
+        <div class="group">
+          <div class="relative h-64 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/Growth Hacking.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
+              <p class="text-sm opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-4 transition-all duration-300 delay-100">Rapid experimentation and scaling strategies</p>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-4 mb-2 text-center">Growth Hacking</h3>
+        </div>
+      </div>
+
+      <!-- CTA to Services -->
+      <div class="text-center mt-12">
+        <a href="services.html" class="inline-flex items-center space-x-2 bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+          <span>Explore All Services</span>
+          <span>→</span>
+        </a>
       </div>
     </div>
   </section>
 
-    <!-- Framework Section -->
-    <section class="framework">
-        <div class="container">
-            <div class="framework-intro">
-                <div class="framework-badge">The ACCELERATE Framework™</div>
-                <h2 class="section-title">A Systematic Approach to D2C Growth</h2>
-                <p class="section-subtitle">10 proven steps that deliver measurable results for ambitious D2C founders</p>
+  <!-- Simple Process Overview -->
+  <section class="py-20 bg-gradient-to-br from-deepblue to-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+          Our Proven Process
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          The ACCELERATE Framework™ - a systematic approach that delivers measurable growth.
+        </p>
       </div>
 
-            <div class="framework-grid">
-                <div class="framework-step lazy-load">
-                    <div class="step-number">A</div>
-                    <h3 class="step-title">Assess</h3>
-                    <p class="step-description">Decode the Battlefield</p>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal to-coral rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">1</div>
+          <h3 class="text-xl font-bold text-white mb-2">Analyze</h3>
+          <p class="text-gray-300 text-sm">Current state and competitive position</p>
         </div>
 
-                <div class="framework-step lazy-load">
-                    <div class="step-number">C</div>
-                    <h3 class="step-title">Customize</h3>
-                    <p class="step-description">Precision Customer Blueprints</p>
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-coral to-teal rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">2</div>
+          <h3 class="text-xl font-bold text-white mb-2">Create</h3>
+          <p class="text-gray-300 text-sm">Data-driven customer personas and journey maps</p>
         </div>
 
-                <div class="framework-step lazy-load">
-                    <div class="step-number">C</div>
-                    <h3 class="step-title">Communicate</h3>
-                    <p class="step-description">Conversion Magnet Messaging</p>
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal to-coral rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">3</div>
+          <h3 class="text-xl font-bold text-white mb-2">Execute</h3>
+          <p class="text-gray-300 text-sm">Multi-channel campaigns with precision targeting</p>
         </div>
 
-                <div class="framework-step lazy-load">
-                    <div class="step-number">E</div>
-                    <h3 class="step-title">Execute</h3>
-                    <p class="step-description">Multi-Channel Precision</p>
+        <!-- Step 4 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-to-br from-coral to-teal rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">4</div>
+          <h3 class="text-xl font-bold text-white mb-2">Optimize</h3>
+          <p class="text-gray-300 text-sm">Continuous improvement and scaling</p>
+        </div>
       </div>
 
-                <div class="framework-step lazy-load">
-                    <div class="step-number">L</div>
-                    <h3 class="step-title">Leverage</h3>
-                    <p class="step-description">Automate & Scale</p>
+      <!-- CTA to About Page -->
+      <div class="text-center mt-12">
+        <a href="about.html" class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 border border-white/20">
+          <span>Learn About Our Methodology</span>
+          <span>→</span>
+        </a>
       </div>
-                
-                <div class="framework-step lazy-load">
-                    <div class="step-number">E</div>
-                    <h3 class="step-title">Elevate</h3>
-                    <p class="step-description">Measure What Matters</p>
+    </div>
+  </section>
+
+  <!-- Social Proof Section -->
+   <section class="py-20 bg-gradient-to-r from-teal/5 via-coral/5 to-teal/5 dark:from-teal/10 dark:via-coral/10 dark:to-teal/10">
+     <div class="max-w-7xl mx-auto px-6">
+       <div class="text-center mb-16">
+         <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+           What Our Clients Say
+         </h2>
+         <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+           Real results from real D2C founders who trusted us with their growth.
+         </p>
        </div>
 
-                <div class="framework-step lazy-load">
-                    <div class="step-number">R</div>
-                    <h3 class="step-title">Reinforce</h3>
-                    <p class="step-description">Double Down on Winners</p>
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+         <!-- Video Testimonial 1 -->
+         <a href="case-studies.html#luxe-sneakers" class="testimonial-video bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group">
+           <div class="relative w-full h-48 rounded-xl overflow-hidden mb-4">
+             <img src="assets/images/LuxeSneakers.png" alt="LuxeSneakers Case Study" class="w-full h-full object-cover">
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+             <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300">
+               <span class="text-2xl text-gray-800 group-hover:text-white">▶️</span>
              </div>
-                
-                <div class="framework-step lazy-load">
-                    <div class="step-number">A</div>
-                    <h3 class="step-title">Accelerate</h3>
-                    <p class="step-description">Compounding Growth Velocity</p>
+           </div>
+           <h4 class="font-bold text-gray-900 dark:text-white mb-2">Sarah Chen, Founder of LuxeSneakers</h4>
+           <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">"Sold out our entire collection in 48 hours after implementing their AI-driven campaign strategy."</p>
+           <div class="text-2xl font-bold text-coral">48h Sellout</div>
+         </a>
+
+         <!-- Video Testimonial 2 -->
+         <a href="case-studies.html#eco-glow-skincare" class="testimonial-video bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group">
+           <div class="relative w-full h-48 rounded-xl overflow-hidden mb-4">
+             <img src="assets/images/EcoGlow Skincare.png" alt="EcoGlow Skincare Case Study" class="w-full h-full object-cover">
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+             <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300">
+               <span class="text-2xl text-gray-800 group-hover:text-white">▶️</span>
              </div>
-                
-                <div class="framework-step lazy-load">
-                    <div class="step-number">T</div>
-                    <h3 class="step-title">Transform</h3>
-                    <p class="step-description">Business Breakthrough</p>
+           </div>
+           <h4 class="font-bold text-gray-900 dark:text-white mb-2">Raj Patel, CEO of TechGear</h4>
+           <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">"3x increase in engagement and 2x sales growth in just 6 months. Their approach is revolutionary."</p>
+           <div class="text-2xl font-bold text-teal">3x Engagement</div>
+         </a>
+
+         <!-- Video Testimonial 3 -->
+         <a href="case-studies.html#artisan-coffee-co" class="testimonial-video bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group">
+           <div class="relative w-full h-48 rounded-xl overflow-hidden mb-4">
+             <img src="assets/images/Artisan Coffee Co.png" alt="Artisan Coffee Co Case Study" class="w-full h-full object-cover object-center">
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+             <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-teal group-hover:text-white transition-all duration-300">
+               <span class="text-2xl text-gray-800 group-hover:text-white">▶️</span>
+             </div>
+           </div>
+           <h4 class="font-bold text-gray-900 dark:text-white mb-2">Priya Sharma, Founder of EcoWear</h4>
+           <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">"From struggling startup to market leader. Their strategic approach transformed our entire business."</p>
+           <div class="text-2xl font-bold text-coral">Market Leader</div>
+         </a>
        </div>
 
-                <div class="framework-step lazy-load">
-                    <div class="step-number">E</div>
-                    <h3 class="step-title">Establish</h3>
-                    <p class="step-description">Market Leadership</p>
+       <!-- Industry Recognition -->
+       <div class="mt-16 text-center">
+         <p class="text-gray-600 dark:text-gray-400 text-sm font-medium mb-6">Featured in & Recognized by</p>
+         <div class="flex flex-wrap justify-center items-center gap-8">
+           <div class="text-2xl font-bold text-gray-300">Marketing Land</div>
+           <div class="text-2xl font-bold text-gray-300">HubSpot</div>
+           <div class="text-2xl font-bold text-gray-300">Google</div>
+           <div class="text-2xl font-bold text-gray-300">Forbes</div>
+           <div class="text-2xl font-bold text-gray-300">Inc.</div>
          </div>
        </div>
      </div>
    </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Real Results from Real D2C Founders</h2>
-                <p class="section-subtitle">Here's what happens when ambitious founders implement our ACCELERATE Framework™</p>
+   <!-- Objection Handling - FAQ Section -->
+   <section class="py-20 bg-white dark:bg-gray-900">
+     <div class="max-w-4xl mx-auto px-6">
+       <div class="text-center mb-16">
+         <h2 class="text-4xl md:text-5xl font-extrabold text-deepblue dark:text-white mb-6">
+           Common Questions
+         </h2>
+         <p class="text-xl text-gray-600 dark:text-gray-400">
+           We believe in transparency. Here are answers to questions we hear most often.
+         </p>
        </div>
 
-            <div class="testimonials-grid">
-                <div class="testimonial lazy-load">
-                    <p class="testimonial-text">
-                        Sold out our entire collection in 48 hours after implementing their AI-driven campaign strategy. 
-                        The ACCELERATE Framework transformed our scattered marketing into a systematic growth engine.
-                    </p>
-                    <div class="testimonial-author">Sarah Chen</div>
-                    <div class="testimonial-company">StyleCraft Fashion</div>
+       <div class="space-y-4">
+         <!-- FAQ Item 1 -->
+         <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+           <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-gray-900 dark:text-white">
+             <span>How quickly will I see results?</span>
+             <span class="text-teal text-2xl">+</span>
+           </button>
+           <div class="faq-content mt-4">
+             <p class="text-gray-600 dark:text-gray-400">
+               Most clients see initial improvements within 2-4 weeks, with significant results by month 2-3. Our AI-powered approach accelerates the optimization process compared to traditional methods.
+             </p>
+           </div>
          </div>
 
-                <div class="testimonial lazy-load">
-                    <p class="testimonial-text">
-                        3x increase in engagement and 2x sales growth in just 6 months. Their systematic approach is 
-                        revolutionary - finally, marketing that actually works predictably.
-                    </p>
-                    <div class="testimonial-author">Raj Patel</div>
-                    <div class="testimonial-company">TechNova Electronics</div>
+         <!-- FAQ Item 2 -->
+         <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+           <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-gray-900 dark:text-white">
+             <span>What's your pricing structure?</span>
+             <span class="text-teal text-2xl">+</span>
+           </button>
+           <div class="faq-content mt-4">
+             <p class="text-gray-600 dark:text-gray-400">
+               We offer flexible pricing based on your business size and needs. Starting from ₹50,000/month for startups to custom enterprise solutions. All packages include our money-back guarantee.
+             </p>
+           </div>
          </div>
 
-                <div class="testimonial lazy-load">
-                    <p class="testimonial-text">
-                        From struggling startup to market leader. Their strategic ACCELERATE Framework transformed our 
-                        entire business. 300% revenue growth in 6 months - results speak for themselves.
-                    </p>
-                    <div class="testimonial-author">Priya Sharma</div>
-                    <div class="testimonial-company">VitalLife Health</div>
+         <!-- FAQ Item 3 -->
+         <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+           <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-gray-900 dark:text-white">
+             <span>Do you work with international clients?</span>
+             <span class="text-teal text-2xl">+</span>
+           </button>
+           <div class="faq-content mt-4">
+             <p class="text-gray-600 dark:text-gray-400">
+               Yes! While we're based in India, we work with D2C brands globally. Our AI-powered approach and digital-first methodology work across all markets and time zones.
+             </p>
+           </div>
+         </div>
+
+         <!-- FAQ Item 4 -->
+         <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+           <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-gray-900 dark:text-white">
+             <span>What if I'm not satisfied with the results?</span>
+             <span class="text-teal text-2xl">+</span>
+           </button>
+           <div class="faq-content mt-4">
+             <p class="text-gray-600 dark:text-gray-400">
+               We offer a 30-day money-back guarantee. If you're not seeing the promised improvements within 30 days, we'll refund your investment, no questions asked.
+             </p>
+           </div>
          </div>
        </div>
      </div>
    </section>
 
    <!-- Final CTA Section -->
-    <section class="final-cta" id="strategy-session">
-        <div class="container">
-            <h2>Ready to Transform Your D2C Marketing?</h2>
-            <p class="cta-description">
-                Join 50+ D2C founders who've transformed their marketing with our proven ACCELERATE Framework™. 
-                Get your free growth assessment today.
-            </p>
-            
-            <div class="cta-buttons">
-                <a href="/accelerate-guide/" class="cta-primary">Get Complete Framework Guide</a>
-                <a href="/accelerate-framework/" class="cta-secondary">Learn More About Framework</a>
+   <section class="py-20 bg-gradient-to-br from-gray-900 via-deepblue to-slate-800">
+     <div class="max-w-4xl mx-auto px-6 text-center">
+       <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+         Ready to Unlock Your Growth Potential?
+       </h2>
+       <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+         Join 50+ D2C founders who've transformed their marketing with our proven strategies. Get your free growth assessment today.
+       </p>
+
+       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+         <a href="accelerate-guide/" class="group relative bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
+           <div class="absolute inset-0 bg-gradient-to-r from-coral to-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+           <span class="relative flex items-center justify-center space-x-2">
+             <span>Get Complete ACCELERATE Framework™ Guide</span>
+             <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+           </span>
+         </a>
+         <a href="case-studies.html" class="group border-2 border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform">
+           <span class="flex items-center justify-center space-x-2">
+             <span>View Success Stories</span>
+             <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+           </span>
+         </a>
+       </div>
+
+       <!-- Trust Indicators -->
+       <div class="flex flex-wrap justify-center items-center gap-8 text-gray-400">
+         <div class="flex items-center space-x-2">
+           <span class="text-teal">✓</span>
+           <span>No long-term contracts</span>
+         </div>
+         <div class="flex items-center space-x-2">
+           <span class="text-teal">✓</span>
+           <span>30-day money-back guarantee</span>
+         </div>
+         <div class="flex items-center space-x-2">
+           <span class="text-teal">✓</span>
+           <span>Results within 30 days</span>
+         </div>
        </div>
      </div>
    </section>
 
-    <!-- JavaScript -->
+
+   <!-- Footer -->
+   <footer class="bg-gray-100 dark:bg-gray-800 text-center py-12">
+     <div class="max-w-6xl mx-auto px-6">
+       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+         <div class="text-left">
+           <h4 class="font-bold text-gray-900 dark:text-white mb-4">Services</h4>
+           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+             <li><a href="services.html#strategy" class="hover:text-teal transition-colors">Digital Marketing Strategy & Consulting</a></li>
+             <li><a href="services.html#automation" class="hover:text-teal transition-colors">AI-Powered Marketing Automation</a></li>
+             <li><a href="services.html#content" class="hover:text-teal transition-colors">SEO & Content Marketing</a></li>
+             <li><a href="services.html#ppc" class="hover:text-teal transition-colors">PPC & Paid Media Management</a></li>
+             <li><a href="services.html#technology" class="hover:text-teal transition-colors">Marketing Technology Integration</a></li>
+             <li><a href="services.html#growth" class="hover:text-teal transition-colors">Growth Hacking & Conversion Optimization</a></li>
+           </ul>
+         </div>
+         <div class="text-left">
+           <h4 class="font-bold text-gray-900 dark:text-white mb-4">Company</h4>
+           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+             <li><a href="about.html" class="hover:text-teal transition-colors">About Us</a></li>
+             <li><a href="case-studies.html" class="hover:text-teal transition-colors">Case Studies</a></li>
+             <li><a href="blog.html" class="hover:text-teal transition-colors">Blog</a></li>
+             <li><a href="contact.html" class="hover:text-teal transition-colors">Contact</a></li>
+           </ul>
+         </div>
+         <div class="text-left">
+           <h4 class="font-bold text-gray-900 dark:text-white mb-4">Resources</h4>
+           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+             <li><a href="#" class="hover:text-teal transition-colors">Free Growth Assessment</a></li>
+             <li><a href="#" class="hover:text-teal transition-colors">Marketing Calculator</a></li>
+             <li><a href="#" class="hover:text-teal transition-colors">ROI Calculator</a></li>
+             <li><a href="#" class="hover:text-teal transition-colors">Download Guide</a></li>
+           </ul>
+         </div>
+         <div class="text-left">
+           <h4 class="font-bold text-gray-900 dark:text-white mb-4">Connect</h4>
+           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+             <li><a href="#" class="hover:text-teal transition-colors">LinkedIn</a></li>
+             <li><a href="#" class="hover:text-teal transition-colors">Twitter</a></li>
+             <li><a href="#" class="hover:text-teal transition-colors">Instagram</a></li>
+             <li><a href="#" class="hover:text-teal transition-colors">YouTube</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="border-t border-gray-300 dark:border-gray-700 pt-8">
+         <p class="text-gray-600 dark:text-gray-400 text-sm">
+           © 2025 Outta The Box Marketing. All rights reserved. | Privacy Policy | Terms of Service
+         </p>
+       </div>
+     </div>
+   </footer>
+
   <script>
-        // Lazy Loading Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('loaded');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.lazy-load').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Smooth Scrolling
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navbar = document.getElementById('navbar');
+    const html = document.documentElement;
+    
+    // Dark mode toggle
+    darkModeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      darkModeToggle.querySelector('span').textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+    });
+    
+    // Mobile menu toggle
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      // Toggle hamburger icon
+      const icon = mobileMenuToggle.querySelector('svg');
+      if (mobileMenu.classList.contains('open')) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+      } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      }
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+        const icon = mobileMenuToggle.querySelector('svg');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      }
+    });
+    
+    // Close mobile menu when clicking on links
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        const icon = mobileMenuToggle.querySelector('svg');
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      });
+    });
+    
+    // Navbar background based on scroll position
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      
+      if (scrollY > 50) {
+        // Scrolled - solid background
+        navbar.classList.remove('bg-white/95', 'dark:bg-deepblue/95');
+        navbar.classList.add('bg-white', 'dark:bg-deepblue');
+        navbar.classList.add('shadow-xl');
+      } else {
+        // At top - transparent background
+        navbar.classList.remove('bg-white', 'dark:bg-deepblue');
+        navbar.classList.add('bg-white/95', 'dark:bg-deepblue/95');
+        navbar.classList.remove('shadow-xl');
+      }
+    });
+    
+    // Active section highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    function highlightActiveSection() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', highlightActiveSection);
+    
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -728,42 +1062,480 @@
       });
     });
 
-        // Performance Tracking
-        window.addEventListener('load', function() {
-            // Track page load
-      if (typeof gtag !== 'undefined') {
-                gtag('event', 'page_view', {
-                    'page_title': 'ACCELERATE Framework Homepage',
-                    'page_location': window.location.href
-                });
-            }
+    // FAQ Accordion functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.closest('.faq-item');
+        const content = faqItem.querySelector('.faq-content');
+        const icon = question.querySelector('span:last-child');
+        
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.querySelector('.faq-content').classList.remove('open');
+            item.querySelector('.faq-question span:last-child').textContent = '+';
+          }
         });
+        
+        // Toggle current FAQ item
+        content.classList.toggle('open');
+        icon.textContent = content.classList.contains('open') ? '−' : '+';
+      });
+    });
 
-        // CTA Click Tracking
-        document.querySelectorAll('.cta-primary, .cta-secondary').forEach(button => {
-            button.addEventListener('click', function() {
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'cta_click', {
-                        'button_text': this.textContent.trim(),
-                        'button_location': this.closest('section').className
-                    });
-                }
+    // Conversion tracking (placeholder for analytics)
+    document.querySelectorAll('a[href="contact.html"]').forEach(link => {
+      link.addEventListener('click', () => {
+        // Track CTA clicks
+        console.log('CTA clicked:', link.textContent.trim());
+        // Add your analytics tracking code here
+      });
+    });
+
+    // A/B Testing capability with multiple variants
+    function initABTesting() {
+      // Check if variant already assigned
+      let variant = localStorage.getItem('ab_variant');
+      if (!variant) {
+        // Randomly assign users to A, B, or C variant
+        const random = Math.random();
+        if (random < 0.33) variant = 'A';
+        else if (random < 0.66) variant = 'B';
+        else variant = 'C';
+        localStorage.setItem('ab_variant', variant);
+      }
+      
+      // Apply variant-specific changes
+      const primaryCTA = document.querySelector('a[href="contact.html"]');
+      const secondaryCTA = document.querySelector('a[href="case-studies.html"]');
+      
+      switch(variant) {
+        case 'A':
+          // Original version - no changes
+          break;
+        case 'B':
+          // Urgency-focused variant
+          if (primaryCTA) {
+            primaryCTA.innerHTML = '<span class="relative flex items-center justify-center space-x-2"><span>Get Your Free Audit (Limited Time)</span><span class="group-hover:translate-x-1 transition-transform duration-300">→</span></span>';
+          }
+          if (secondaryCTA) {
+            secondaryCTA.innerHTML = '<span class="flex items-center justify-center space-x-2"><span>See 300% ROI Results</span><span class="group-hover:translate-x-1 transition-transform duration-300">→</span></span>';
+          }
+          break;
+        case 'C':
+          // Benefit-focused variant
+          if (primaryCTA) {
+            primaryCTA.innerHTML = '<span class="relative flex items-center justify-center space-x-2"><span>Discover Your 300% ROI Potential</span><span class="group-hover:translate-x-1 transition-transform duration-300">→</span></span>';
+          }
+          if (secondaryCTA) {
+            secondaryCTA.innerHTML = '<span class="flex items-center justify-center space-x-2"><span>View Success Stories</span><span class="group-hover:translate-x-1 transition-transform duration-300">→</span></span>';
+          }
+          break;
+      }
+      
+      // Track variant assignment
+      console.log('A/B Test Variant:', variant);
+    }
+
+    // Enhanced conversion tracking
+    function trackConversion(action, element) {
+      const data = {
+        action: action,
+        element: element,
+        variant: localStorage.getItem('ab_variant') || 'A',
+        timestamp: new Date().toISOString(),
+        url: window.location.href
+      };
+      
+      console.log('Conversion Event:', data);
+      
+      // Send to analytics (replace with your analytics code)
+      if (typeof gtag !== 'undefined') {
+        gtag('event', action, {
+          'event_category': 'CTA',
+          'event_label': element,
+          'value': 1
+        });
+      }
+    }
+
+    // Intersection Observer for scroll-triggered animations
+    function initScrollAnimations() {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document.querySelectorAll('.trust-badge, .social-proof-metric, .testimonial-video').forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    // Enhanced CTA tracking
+    function initCTATracking() {
+      document.querySelectorAll('a[href="contact.html"]').forEach(link => {
+        link.addEventListener('click', () => {
+          trackConversion('primary_cta_click', 'hero_primary_cta');
         });
       });
+
+      document.querySelectorAll('a[href="case-studies.html"]').forEach(link => {
+        link.addEventListener('click', () => {
+          trackConversion('secondary_cta_click', 'hero_secondary_cta');
+        });
+      });
+    }
+
+    // Initialize all features
+    function init() {
+      initABTesting();
+      initScrollAnimations();
+      initCTATracking();
+    }
+
+    // Services dropdown functionality
+    function initServicesDropdown() {
+      const servicesButton = document.querySelector('.dropdown button');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+      
+      if (servicesButton && dropdownMenu) {
+        // Toggle dropdown on click
+        servicesButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropdownMenu.classList.toggle('show');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!servicesButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+          }
+        });
+        
+        // Close dropdown when clicking on a service link
+        dropdownMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            dropdownMenu.classList.remove('show');
+          });
+        });
+      }
+    }
+
+    // Initialize when DOM is loaded
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        init();
+        initServicesDropdown();
+      });
+    } else {
+      init();
+      initServicesDropdown();
+    }
   </script>
 
-    <!-- Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <!-- Comprehensive Funnel Tracking & Automation -->
   <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID', {
-            custom_map: {
-                'custom_parameter_1': 'framework_step',
-                'custom_parameter_2': 'lead_source',
-                'custom_parameter_3': 'conversion_type'
-            }
+    // Funnel Stage Tracking
+    class FunnelTracker {
+      constructor() {
+        this.stage = this.getStageFromURL();
+        this.leadScore = 0;
+        this.interactions = [];
+        this.init();
+      }
+
+      getStageFromURL() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('audit') === 'true') return 'consideration';
+        if (urlParams.get('consultation') === 'true') return 'consideration';
+        if (urlParams.get('pilot') === 'true') return 'decision';
+        if (urlParams.get('assessment') === 'true') return 'interest';
+        return 'awareness';
+      }
+
+      init() {
+        this.trackPageView();
+        this.setupEventListeners();
+        this.setupLeadScoring();
+        this.setupRetargeting();
+      }
+
+      trackPageView() {
+        const data = {
+          stage: this.stage,
+          page: window.location.pathname,
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent,
+          referrer: document.referrer
+        };
+        
+        this.sendEvent('page_view', data);
+        console.log('Funnel Stage:', this.stage, 'Page View Tracked');
+      }
+
+      setupEventListeners() {
+        // Newsletter signup tracking
+        const newsletterForm = document.getElementById('newsletterSignup');
+        if (newsletterForm) {
+          newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            this.trackNewsletterSignup();
+          });
+        }
+
+        // CTA button tracking
+        document.querySelectorAll('a[href*="contact.html"]').forEach(link => {
+          link.addEventListener('click', () => {
+            this.trackEvent('cta_click', {
+              stage: this.stage,
+              cta_type: link.textContent.trim(),
+              cta_url: link.href
+            });
+          });
+        });
+
+        // Assessment tool tracking
+        document.querySelectorAll('a[href*="assessment=true"]').forEach(link => {
+          link.addEventListener('click', () => {
+            this.trackEvent('assessment_start', {
+              stage: 'interest',
+              tool_type: 'marketing_assessment'
+            });
+          });
+        });
+
+        // ROI Calculator tracking
+        const roiButton = document.querySelector('button[onclick="calculateROI()"]');
+        if (roiButton) {
+          roiButton.addEventListener('click', () => {
+            this.trackEvent('roi_calculator_used', {
+              stage: 'interest',
+              tool_type: 'roi_calculator'
+            });
+          });
+        }
+
+        // Case study view tracking
+        document.querySelectorAll('a[href*="case-studies.html"]').forEach(link => {
+          link.addEventListener('click', () => {
+            this.trackEvent('case_study_view', {
+              stage: this.stage,
+              action: 'navigate_to_case_studies'
+            });
+          });
+        });
+      }
+
+      setupLeadScoring() {
+        // Track time on page
+        let timeOnPage = 0;
+        setInterval(() => {
+          timeOnPage += 10;
+          if (timeOnPage % 60 === 0) { // Every minute
+            this.updateLeadScore('time_on_page', timeOnPage / 60);
+          }
+        }, 10000);
+
+        // Track scroll depth
+        let maxScroll = 0;
+        window.addEventListener('scroll', () => {
+          const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+          if (scrollPercent > maxScroll) {
+            maxScroll = scrollPercent;
+            this.updateLeadScore('scroll_depth', scrollPercent);
+          }
+        });
+
+        // Track video engagement
+        document.querySelectorAll('video, .testimonial-video').forEach(video => {
+          video.addEventListener('play', () => {
+            this.updateLeadScore('video_engagement', 1);
+          });
+        });
+      }
+
+      updateLeadScore(factor, value) {
+        const scores = {
+          'newsletter_signup': 20,
+          'cta_click': 10,
+          'assessment_start': 15,
+          'roi_calculator_used': 8,
+          'case_study_view': 12,
+          'time_on_page': Math.min(value * 2, 20),
+          'scroll_depth': Math.min(value / 5, 15),
+          'video_engagement': 5
+        };
+
+        const points = scores[factor] || 0;
+        this.leadScore += points;
+        
+        this.trackEvent('lead_score_update', {
+          factor: factor,
+          value: value,
+          points: points,
+          total_score: this.leadScore
+        });
+
+        // Trigger stage progression
+        this.checkStageProgression();
+      }
+
+      checkStageProgression() {
+        if (this.leadScore >= 50 && this.stage === 'awareness') {
+          this.progressToStage('interest');
+        } else if (this.leadScore >= 100 && this.stage === 'interest') {
+          this.progressToStage('consideration');
+        } else if (this.leadScore >= 150 && this.stage === 'consideration') {
+          this.progressToStage('decision');
+        }
+      }
+
+      progressToStage(newStage) {
+        this.stage = newStage;
+        this.trackEvent('stage_progression', {
+          from_stage: this.stage,
+          to_stage: newStage,
+          lead_score: this.leadScore
+        });
+        
+        // Show stage-specific content
+        this.showStageContent(newStage);
+      }
+
+      showStageContent(stage) {
+        // Add stage-specific CTAs or content
+        const stageElements = {
+          'interest': document.querySelectorAll('.interest-stage'),
+          'consideration': document.querySelectorAll('.consideration-stage'),
+          'decision': document.querySelectorAll('.decision-stage')
+        };
+
+        stageElements[stage]?.forEach(element => {
+          element.classList.add('highlight');
+        });
+      }
+
+      setupRetargeting() {
+        // Facebook Pixel
+        if (typeof fbq !== 'undefined') {
+          fbq('track', 'PageView');
+        }
+
+        // Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href,
+            funnel_stage: this.stage
+          });
+        }
+
+        // LinkedIn Insight Tag
+        if (typeof _linkedin_data_partner_ids !== 'undefined') {
+          _linkedin_data_partner_ids.push('1234567');
+        }
+      }
+
+      trackNewsletterSignup() {
+        const email = document.getElementById('newsletterEmail').value;
+        this.trackEvent('newsletter_signup', {
+          stage: 'awareness',
+          email: email,
+          source: 'homepage_hero'
+        });
+        
+        // Show success message
+        this.showSuccessMessage('Thank you! Check your email for the Growth Playbook.');
+        
+        // Update lead score
+        this.updateLeadScore('newsletter_signup', 1);
+      }
+
+      trackEvent(eventName, data) {
+        const eventData = {
+          event: eventName,
+          stage: this.stage,
+          lead_score: this.leadScore,
+          timestamp: new Date().toISOString(),
+          ...data
+        };
+
+        this.interactions.push(eventData);
+        this.sendEvent(eventName, eventData);
+        
+        console.log('Funnel Event:', eventName, eventData);
+      }
+
+      sendEvent(eventName, data) {
+        // Send to analytics platforms
+        if (typeof gtag !== 'undefined') {
+          gtag('event', eventName, data);
+        }
+
+        // Send to custom endpoint
+        fetch('/api/track', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        }).catch(err => console.log('Tracking error:', err));
+      }
+
+      showSuccessMessage(message) {
+        const notification = document.createElement('div');
+        notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+          notification.remove();
+        }, 5000);
+      }
+    }
+
+    // ROI Calculator Function
+    function calculateROI() {
+      const currentRevenue = parseFloat(document.getElementById('currentRevenue').value) || 0;
+      const marketingSpend = parseFloat(document.getElementById('marketingSpend').value) || 0;
+      
+      if (currentRevenue === 0 || marketingSpend === 0) {
+        alert('Please enter both revenue and marketing spend amounts.');
+        return;
+      }
+
+      // Calculate potential improvement (conservative estimate)
+      const currentROI = ((currentRevenue - marketingSpend) / marketingSpend) * 100;
+      const potentialImprovement = Math.min(currentROI * 0.3, 200); // Up to 200% improvement
+      const newROI = currentROI + potentialImprovement;
+      
+      document.getElementById('roiPercentage').textContent = Math.round(potentialImprovement) + '%';
+      document.getElementById('roiResult').classList.remove('hidden');
+      
+      // Track ROI calculator usage
+      if (window.funnelTracker) {
+        window.funnelTracker.trackEvent('roi_calculator_completed', {
+          current_revenue: currentRevenue,
+          marketing_spend: marketingSpend,
+          current_roi: currentROI,
+          potential_improvement: potentialImprovement
+        });
+      }
+    }
+
+    // Initialize funnel tracking
+    document.addEventListener('DOMContentLoaded', () => {
+      window.funnelTracker = new FunnelTracker();
     });
   </script>
 </body>
