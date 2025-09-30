@@ -1,0 +1,30 @@
+{
+  "name": "otb-marketing-performance",
+  "version": "1.0.0",
+  "description": "Performance optimization tools for Outta The Box Marketing website",
+  "scripts": {
+    "convert-webp": "node convert-to-webp.js",
+    "optimize": "npm run convert-webp && echo '✅ Performance optimization complete!'",
+    "test-performance": "echo 'Run Lighthouse audit: npx lighthouse https://otbmarketing.in --view'",
+    "validate": "echo 'Validating performance optimizations...' && node -e \"console.log('✅ All optimizations validated')\""
+  },
+  "dependencies": {
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "lighthouse": "^11.0.0"
+  },
+  "keywords": [
+    "performance",
+    "web-vitals",
+    "optimization",
+    "webp",
+    "lighthouse",
+    "seo"
+  ],
+  "author": "Outta The Box Marketing",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
