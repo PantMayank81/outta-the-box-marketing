@@ -1,0 +1,278 @@
+/* EMERGENCY HOMEPAGE RESTORATION CSS */
+/* Add this to assets/css/emergency-fix.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section - Professional Styling */
+.hero, header, .main-header {
+    background: linear-gradient(135deg, #0A2540 0%, #1a3a5c 100%);
+    color: white;
+    padding: 8rem 2rem 6rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1, .main-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+}
+
+.hero p, .subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin: 0 0 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Metrics Styling */
+.metrics, .stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.metric, .stat {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.metric-number, .stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FF6F3C;
+    line-height: 1;
+}
+
+.metric-label, .stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+/* CTA Buttons */
+.cta-primary, .btn-primary, button[type="submit"] {
+    background: linear-gradient(135deg, #FF6F3C 0%, #e55a2b 100%);
+    color: white;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 111, 60, 0.3);
+    margin: 1rem 0.5rem;
+}
+
+.cta-primary:hover, .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(255, 111, 60, 0.4);
+}
+
+.cta-secondary, .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 1.5rem 3rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin: 1rem 0.5rem;
+}
+
+.cta-secondary:hover {
+    background: white;
+    color: #0A2540;
+}
+
+/* Section Styling */
+section {
+    padding: 6rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 700;
+    color: #0A2540;
+    margin: 0 0 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0A2540;
+    margin: 0 0 1rem;
+}
+
+/* Services Grid */
+.services, .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.service, .feature {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service:hover, .feature:hover {
+    transform: translateY(-10px);
+}
+
+/* Brand Logos */
+.brands {
+    background: #f8f9fa;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.brand {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #666;
+}
+
+/* Testimonials */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.testimonial {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #FF6F3C;
+}
+
+.testimonial blockquote {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.testimonial cite {
+    font-weight: 600;
+    color: #0A2540;
+    font-style: normal;
+}
+
+/* FAQ Section */
+.faq {
+    background: #f8f9fa;
+    padding: 6rem 2rem;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0A2540;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding: 0 2rem 2rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Trust Signals */
+.trust-signals {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.trust-signals p {
+    opacity: 0.8;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metrics, .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .cta-primary, .cta-secondary {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 1rem auto;
+    }
+    
+    .hero {
+        padding: 4rem 1rem 3rem;
+    }
+    
+    section {
+        padding: 4rem 1rem;
+    }
+}
