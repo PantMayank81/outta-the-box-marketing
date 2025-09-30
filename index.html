@@ -163,9 +163,6 @@ OPTIMIZATIONS IMPLEMENTED:
   <link rel="prefetch" href="services.html">
   <link rel="prefetch" href="case-studies.html">
   
-  <!-- Emergency Homepage Restoration CSS - External File with !important -->
-  <link rel="stylesheet" href="/assets/css/homepage-fix.css">
-  
   <!-- SEO Meta Tags -->
   <title>AI Marketing Consultant India | Outta The Box Marketing - From ICP to ROI</title>
   <meta name="description" content="Leading AI-powered digital marketing consultant in India. Helping D2C brands achieve 3x engagement, 2x sales growth through human-first AI strategies. Book your growth call today.">
@@ -232,6 +229,9 @@ OPTIMIZATIONS IMPLEMENTED:
   
   <!-- Defer non-critical JavaScript -->
   <script src="https://cdn.tailwindcss.com" defer></script>
+  
+  <!-- Emergency Homepage Restoration CSS - Load AFTER Tailwind to override -->
+  <link rel="stylesheet" href="/assets/css/homepage-fix.css">
   
   <!-- Load SEO Analytics and Automation Scripts asynchronously -->
   <script src="assets/js/seo-analytics.js" async></script>
