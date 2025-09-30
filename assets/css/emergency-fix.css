@@ -15,18 +15,18 @@ body {
 
 /* Hero Section - Professional Styling */
 .hero, header, .main-header {
-    background: linear-gradient(135deg, #0A2540 0%, #1a3a5c 100%);
-    color: white;
-    padding: 8rem 2rem 6rem;
-    text-align: center;
-    position: relative;
+    background: linear-gradient(135deg, #0A2540 0%, #1a3a5c 100%) !important;
+    color: white !important;
+    padding: 8rem 2rem 6rem !important;
+    text-align: center !important;
+    position: relative !important;
 }
 
 .hero h1, .main-title {
-    font-size: clamp(3rem, 6vw, 5rem);
-    font-weight: 800;
-    line-height: 1.1;
-    margin: 0 0 2rem;
+    font-size: clamp(3rem, 6vw, 5rem) !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    margin: 0 0 2rem !important;
 }
 
 .hero p, .subtitle {
