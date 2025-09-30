@@ -214,7 +214,10 @@
             
             <!-- Logo -->
             <a href="index.html" class="flex items-center space-x-3 group">
-                <img src="assets/images/Colorful Brain Digital World Technology Logo.png" alt="Outta The Box Marketing Logo" class="h-[62px] w-auto group-hover:scale-105 transition-transform duration-300">
+                <picture>
+                  <source srcset="assets/images/Colorful Brain Digital World Technology Logo.webp" type="image/webp">
+                  <img src="assets/images/Colorful Brain Digital World Technology Logo.png" alt="Outta The Box Marketing Logo" class="h-[62px] w-auto group-hover:scale-105 transition-transform duration-300" width="62" height="62">
+                </picture>
                 <div class="text-deepblue dark:text-white font-bold text-2xl group-hover:text-teal transition-colors duration-300 text-center">
                   <div>Outta the box</div>
                   <div>Marketing</div>
@@ -327,7 +330,10 @@
                 <!-- Case Study 1: Sneaker Brand -->
                 <div id="luxe-sneakers" class="case-study-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="fashion" data-case="sneaker-brand">
                     <div class="relative w-full h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="assets/images/LuxeSneakers.png" alt="LuxeSneakers Case Study" class="w-full h-full object-cover">
+                        <picture>
+                          <source srcset="assets/images/LuxeSneakers.webp" type="image/webp">
+                          <img src="assets/images/LuxeSneakers.png" alt="LuxeSneakers 48h Sellout Case Study" class="w-full h-full object-cover" loading="lazy" width="600" height="300">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
                             <div class="text-xs text-gray-800 font-semibold">Fashion & Apparel</div>
@@ -374,7 +380,10 @@
                 <!-- Case Study 2: Skincare Brand -->
                 <div id="eco-glow-skincare" class="case-study-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="beauty" data-case="skincare-brand" style="animation-delay: 0.1s;">
                     <div class="relative w-full h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="assets/images/EcoGlow Skincare.png" alt="EcoGlow Skincare Case Study" class="w-full h-full object-cover">
+                        <picture>
+                          <source srcset="assets/images/EcoGlow Skincare.webp" type="image/webp">
+                          <img src="assets/images/EcoGlow Skincare.png" alt="EcoGlow Skincare 3x Engagement Case Study" class="w-full h-full object-cover" loading="lazy" width="600" height="300">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
                             <div class="text-xs text-gray-800 font-semibold">Beauty & Skincare</div>
@@ -421,7 +430,10 @@
                 <!-- Case Study 3: Coffee Brand -->
                 <div id="artisan-coffee-co" class="case-study-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="food" data-case="coffee-brand" style="animation-delay: 0.2s;">
                     <div class="relative w-full h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="assets/images/Artisan Coffee Co.png" alt="Artisan Coffee Co Case Study" class="w-full h-full object-cover object-center">
+                        <picture>
+                          <source srcset="assets/images/Artisan Coffee Co.webp" type="image/webp">
+                          <img src="assets/images/Artisan Coffee Co.png" alt="Artisan Coffee Co Market Leadership Case Study" class="w-full h-full object-cover object-center" loading="lazy" width="600" height="300">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
                             <div class="text-xs text-gray-800 font-semibold">Food & Beverage</div>
@@ -468,7 +480,10 @@
                 <!-- Case Study 4: Tech Startup -->
                 <div class="case-study-card bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 animate-fade-in" data-category="tech" data-case="tech-startup" style="animation-delay: 0.3s;">
                     <div class="relative w-full h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="assets/images/TechFlow Solutions.png" alt="TechFlow Solutions Case Study" class="w-full h-full object-cover">
+                        <picture>
+                          <source srcset="assets/images/TechFlow Solutions.webp" type="image/webp">
+                          <img src="assets/images/TechFlow Solutions.png" alt="TechFlow Solutions 320% Lead Growth Case Study" class="w-full h-full object-cover" loading="lazy" width="600" height="300">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
                             <div class="text-xs text-gray-800 font-semibold">Technology & SaaS</div>
@@ -766,6 +781,8 @@
             element.style.animationDelay = `${index * 0.1}s`;
         });
     </script>
+  <!-- Performance Optimization Script -->
+  <script src="/assets/js/performance.js"></script>
 </body>
 </html>
 
