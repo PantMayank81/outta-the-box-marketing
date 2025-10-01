@@ -74,6 +74,29 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 25px rgba(0, 128, 128, 0.4);
     }
+    
+    /* Fix overlapping elements */
+    .seo-dashboard, .dashboard-overlay, .analytics-widget {
+      position: relative !important;
+      z-index: 10 !important;
+      margin: 1rem 0 !important;
+    }
+    
+    /* Ensure proper spacing for CTA sections */
+    .cta-section, .final-cta, .hero-cta {
+      position: relative !important;
+      z-index: 20 !important;
+      margin: 2rem 0 !important;
+    }
+    
+    /* Fix notification positioning */
+    .notification, .success-message {
+      position: fixed !important;
+      top: 100px !important;
+      right: 20px !important;
+      z-index: 9999 !important;
+      max-width: 300px !important;
+    }
   </style>
   
   <!-- SEO Meta Tags -->
@@ -1519,7 +1542,7 @@
 
       showSuccessMessage(message) {
         const notification = document.createElement('div');
-        notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+        notification.className = 'fixed top-24 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 notification';
         notification.textContent = message;
         document.body.appendChild(notification);
         
