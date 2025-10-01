@@ -802,9 +802,10 @@ class SEOMonitoringDashboard {
 }
 
 // Initialize SEO Monitoring Dashboard when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    window.seoMonitoring = new SEOMonitoringDashboard();
-});
+// DISABLED: Dashboard causing navigation overlap issues
+// document.addEventListener('DOMContentLoaded', () => {
+//     window.seoMonitoring = new SEOMonitoringDashboard();
+// });
 
 // Export for use in other scripts
 if (typeof module !== 'undefined' && module.exports) {
