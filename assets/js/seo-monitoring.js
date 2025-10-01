@@ -508,13 +508,13 @@ class SEOMonitoringDashboard {
             <style>
                 #seo-monitoring-dashboard {
                     position: fixed;
-                    top: 20px;
+                    top: 120px;
                     right: 20px;
                     background: white;
                     border: 1px solid #ddd;
                     border-radius: 8px;
                     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-                    z-index: 1000;
+                    z-index: 100;
                     font-family: Arial, sans-serif;
                     transition: all 0.3s ease;
                     cursor: pointer;
