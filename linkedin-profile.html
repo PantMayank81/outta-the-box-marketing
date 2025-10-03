@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The D2C Whisperer - LinkedIn Profile | Outta The Box Marketing</title>
+  <meta name="description" content="The D2C Whisperer - Turning Struggling Brands Into Market Leaders through AI-Powered Psychology for ₹5-50Cr Founders">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deepblue: '#0A2540',
+            teal: '#008080',
+            coral: '#FF6F3C',
+            charcoal: '#333333',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Critical CSS -->
+  <style>
+    body { 
+      font-family: 'Inter', sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 { 
+      font-family: 'Space Grotesk', sans-serif; 
+      font-weight: 700;
+    }
+    .hero-section { 
+      min-height: 100vh; 
+      background: linear-gradient(135deg, #0A2540 0%, #008080 100%);
+      position: relative;
+    }
+    .nav-header { 
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      z-index: 1000; 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .whisper-text {
+      background: linear-gradient(135deg, #008080, #FF6F3C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .profile-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .experience-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .skill-tag {
+      background: linear-gradient(135deg, #008080, #FF6F3C);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .post-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-900 text-white">
+  <!-- Enhanced Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-deepblue/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 dark:border-gray-700/20">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-[80px]">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-gradient-to-r from-teal to-coral rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-xl">O</span>
+        </div>
+        <div class="hidden sm:block">
+          <div class="text-xl font-bold text-deepblue dark:text-white">Outta The Box</div>
+          <div class="text-sm text-gray-600 dark:text-gray-300">Marketing</div>
+        </div>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium relative">Home</a>
+        <a href="services.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Services</a>
+        <a href="about.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">About</a>
+        <a href="case-studies.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Case Studies</a>
+        <a href="blog.html" class="nav-link text-deepblue dark:text-white hover:text-teal transition-colors duration-300 font-medium">Blog</a>
+        <a href="linkedin-profile.html" class="nav-link text-teal dark:text-teal font-semibold">LinkedIn Profile</a>
+        
+        <!-- CTA Button -->
+        <a href="contact.html" class="bg-gradient-to-r from-teal to-coral text-white px-6 py-3 rounded-lg font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+          Get Started
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuToggle" class="lg:hidden p-2 text-deepblue dark:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu lg:hidden fixed top-[80px] right-0 w-full max-w-sm h-full bg-white dark:bg-gray-800 shadow-2xl border-l border-gray-200 dark:border-gray-700">
+      <div class="p-6 space-y-6 h-full overflow-y-auto">
+        <!-- Mobile Navigation Links -->
+        <div class="space-y-4">
+          <a href="index.html" class="block text-gray-700 dark:text-gray-300 hover:text-teal transition-colors duration-200 font-medium">Home</a>
+          <a href="services.html" class="block text-gray-700 dark:text-gray-300 hover:text-teal transition-colors duration-200 font-medium">Services</a>
+          <a href="about.html" class="block text-gray-700 dark:text-gray-300 hover:text-teal transition-colors duration-200 font-medium">About</a>
+          <a href="case-studies.html" class="block text-gray-700 dark:text-gray-300 hover:text-teal transition-colors duration-200 font-medium">Case Studies</a>
+          <a href="blog.html" class="block text-gray-700 dark:text-gray-300 hover:text-teal transition-colors duration-200 font-medium">Blog</a>
+          <a href="linkedin-profile.html" class="block text-teal font-semibold">LinkedIn Profile</a>
+        </div>
+        
+        <!-- Mobile CTA -->
+        <div class="pt-6 border-t border-gray-200 dark:border-gray-700">
+          <a href="contact.html" class="block w-full bg-gradient-to-r from-teal to-coral text-white text-center py-3 rounded-lg font-bold hover:shadow-lg transition-all duration-300">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LinkedIn Profile Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden mt-[80px] bg-gradient-to-br from-slate-900 via-deepblue to-slate-800">
+    <div class="absolute inset-0 bg-black/20"></div>
+    
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 left-10 w-32 h-32 bg-teal/30 rounded-full blur-xl"></div>
+      <div class="absolute top-40 right-20 w-24 h-24 bg-coral/30 rounded-full blur-xl"></div>
+      <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-teal/20 rounded-full blur-xl"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center">
+        <!-- Profile Photo Placeholder -->
+        <div class="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-r from-teal to-coral p-1">
+          <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
+            <span class="text-6xl font-bold whisper-text">🤫</span>
+          </div>
+        </div>
+        
+        <!-- Name and Title -->
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          <span class="whisper-text">The D2C Whisperer</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto">
+          Turning Struggling Brands Into Market Leaders
+        </p>
+        
+        <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
+          AI-Powered Psychology for ₹5-50Cr Founders
+        </p>
+        
+        <!-- LinkedIn CTA -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="https://www.linkedin.com/company/109058209" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span>Follow Our Company</span>
+          </a>
+          
+          <a href="contact.html" class="bg-gradient-to-r from-teal to-coral text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105">
+            Work With Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="profile-card rounded-2xl p-8 md:p-12">
+        <h2 class="text-4xl font-bold mb-8 text-center">
+          <span class="whisper-text">About The Whisperer</span>
+        </h2>
+        
+        <div class="prose prose-lg prose-invert max-w-none">
+          <p class="text-xl text-gray-300 mb-6">
+            🤫 Most D2C consultants shout their strategies.<br>
+            🧠 I whisper the insights that create market leaders.
+          </p>
+          
+          <div class="bg-slate-700/50 rounded-xl p-6 mb-8">
+            <h3 class="text-2xl font-bold text-coral mb-4">THE UNCOMFORTABLE TRUTH:</h3>
+            <p class="text-lg text-gray-300">
+              73% of D2C brands fail not because they lack tactics, but because they don't understand the psychology driving their customers—or themselves.
+            </p>
+            <p class="text-lg text-white font-semibold mt-4">I see what others miss.</p>
+          </div>
+          
+          <h3 class="text-2xl font-bold text-teal mb-6">THE WHISPERER METHOD:</h3>
+          <p class="text-lg text-gray-300 mb-6">I combine 7 revolutionary minds to decode D2C success:</p>
+          
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🎯</span>
+                <div>
+                  <h4 class="font-bold text-white">GALLOWAY'S REALITY</h4>
+                  <p class="text-gray-300">Brutal market truths (unit economics don't lie)</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🧪</span>
+                <div>
+                  <h4 class="font-bold text-white">PATEL'S PSYCHOLOGY</h4>
+                  <p class="text-gray-300">Growth through behavioral triggers</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🧠</span>
+                <div>
+                  <h4 class="font-bold text-white">KAHNEMAN'S INSIGHTS</h4>
+                  <p class="text-gray-300">Cognitive bias correction for founders</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">📖</span>
+                <div>
+                  <h4 class="font-bold text-white">HARARI'S VISION</h4>
+                  <p class="text-gray-300">Cultural narratives that become market currency</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">✨</span>
+                <div>
+                  <h4 class="font-bold text-white">JENNER'S INFLUENCE</h4>
+                  <p class="text-gray-300">Turning products into conversations</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🔍</span>
+                <div>
+                  <h4 class="font-bold text-white">FISHKIN'S DISCOVERY</h4>
+                  <p class="text-gray-300">Mastering AI-era search behavior</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">💝</span>
+                <div>
+                  <h4 class="font-bold text-white">HANDLEY'S HUMANITY</h4>
+                  <p class="text-gray-300">Using AI to amplify authentic connection</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-r from-teal/20 to-coral/20 rounded-xl p-6 mb-8">
+            <h3 class="text-2xl font-bold text-white mb-4">THE RESULT:</h3>
+            <p class="text-xl text-gray-300">D2C brands that don't just grow—they become culturally inevitable.</p>
+          </div>
+          
+          <h3 class="text-2xl font-bold text-teal mb-6">WHAT I WHISPER:</h3>
+          <div class="space-y-3 mb-8">
+            <p class="text-lg text-gray-300">→ The psychological blind spots killing your conversion rates</p>
+            <p class="text-lg text-gray-300">→ The cognitive biases sabotaging your strategic decisions</p>
+            <p class="text-lg text-gray-300">→ The cultural shifts your competitors haven't noticed</p>
+            <p class="text-lg text-gray-300">→ The AI advantages hiding in plain sight</p>
+            <p class="text-lg text-gray-300">→ The human truths that technology amplifies</p>
+          </div>
+          
+          <div class="bg-slate-700/50 rounded-xl p-6 mb-8">
+            <p class="text-lg text-gray-300 mb-4">18+ years as CMO taught me what works.</p>
+            <p class="text-lg text-white font-semibold">But studying human nature taught me WHY it works.</p>
+          </div>
+          
+          <h3 class="text-2xl font-bold text-coral mb-6">Recent whispers transformed:</h3>
+          <div class="grid md:grid-cols-3 gap-6 mb-8">
+            <div class="experience-card rounded-xl p-6">
+              <h4 class="font-bold text-white mb-2">LuxeSneakers</h4>
+              <p class="text-gray-300">48h sellout (was struggling for 2 years)</p>
+            </div>
+            <div class="experience-card rounded-xl p-6">
+              <h4 class="font-bold text-white mb-2">TechGear</h4>
+              <p class="text-gray-300">300% engagement through psychological optimization</p>
+            </div>
+            <div class="experience-card rounded-xl p-6">
+              <h4 class="font-bold text-white mb-2">EcoWear</h4>
+              <p class="text-gray-300">Startup to market leader via cultural insight</p>
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <p class="text-xl text-gray-300 mb-6">Ready to hear what I whisper to market leaders?</p>
+            
+            <div class="bg-gradient-to-r from-teal/20 to-coral/20 rounded-xl p-6">
+              <p class="text-lg text-white font-semibold mb-4">The future belongs to founders who understand:</p>
+              <p class="text-lg text-gray-300 mb-2">Markets are conversations.</p>
+              <p class="text-lg text-gray-300 mb-2">Conversations are psychology.</p>
+              <p class="text-lg text-gray-300 mb-4">Psychology can be systematically optimized.</p>
+              <p class="text-lg text-coral font-bold">But only if you know how to listen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company LinkedIn Section -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-6">
+          <span class="whisper-text">Our Company Presence</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Follow our company on LinkedIn for daily insights, case studies, and psychological marketing strategies that transform D2C brands.
+        </p>
+      </div>
+      
+      <div class="profile-card rounded-2xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-3xl font-bold text-white mb-4">Outta The Box Marketing</h3>
+            <p class="text-lg text-gray-300 mb-6">
+              Our LinkedIn company page is where we share the latest insights from The D2C Whisperer methodology, 
+              real client transformations, and psychological marketing strategies that create market leaders.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">📈</span>
+                <div>
+                  <h4 class="font-bold text-white">Daily Insights</h4>
+                  <p class="text-gray-300">Psychological patterns and market whispers shared daily</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🎯</span>
+                <div>
+                  <h4 class="font-bold text-white">Case Studies</h4>
+                  <p class="text-gray-300">Real transformations and results from our client work</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🧠</span>
+                <div>
+                  <h4 class="font-bold text-white">Strategy Deep-Dives</h4>
+                  <p class="text-gray-300">Behind-the-scenes look at The Whisperer Method™</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="https://www.linkedin.com/company/109058209" target="_blank" class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              <span>Follow Our Company</span>
+            </a>
+          </div>
+          
+          <div class="bg-slate-800/50 rounded-xl p-8">
+            <h4 class="text-xl font-bold text-teal mb-6">What You'll Discover:</h4>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <span class="text-coral">→</span>
+                <span class="text-gray-300">The psychological triggers that drive D2C success</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-coral">→</span>
+                <span class="text-gray-300">AI-human psychology integration strategies</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-coral">→</span>
+                <span class="text-gray-300">Cultural trend analysis and market predictions</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-coral">→</span>
+                <span class="text-gray-300">Founder cognitive bias correction techniques</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-coral">→</span>
+                <span class="text-gray-300">Real client transformation stories</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-coral">→</span>
+                <span class="text-gray-300">Exclusive insights from The Whisperer Method™</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold mb-12 text-center">
+        <span class="whisper-text">Experience</span>
+      </h2>
+      
+      <div class="space-y-8">
+        <!-- Current Position -->
+        <div class="experience-card rounded-2xl p-8">
+          <div class="flex items-start space-x-4 mb-6">
+            <span class="text-4xl">🤫</span>
+            <div>
+              <h3 class="text-2xl font-bold text-white">THE D2C WHISPERER</h3>
+              <p class="text-xl text-teal">Outta The Box Marketing | Turning Struggling Brands Into Market Leaders</p>
+              <p class="text-gray-400">January 2024 - Present | Mumbai, India</p>
+            </div>
+          </div>
+          
+          <div class="space-y-4 mb-6">
+            <p class="text-gray-300">→ Created The Whisperer Method™ - decoding D2C success through psychology & AI</p>
+            <p class="text-gray-300">→ Transformed 50+ struggling D2C brands into market leaders</p>
+            <p class="text-gray-300">→ Generated ₹100Cr+ revenue through psychological insight & AI optimization</p>
+            <p class="text-gray-300">→ Built systems that detect founder cognitive biases and correct them systematically</p>
+          </div>
+          
+          <div class="bg-slate-800/50 rounded-xl p-6 mb-6">
+            <h4 class="text-xl font-bold text-coral mb-4">THE WHISPERER RESULTS:</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <p class="text-gray-300">• LuxeSneakers: Complete inventory sellout in 48 hours (was struggling 2+ years)</p>
+              <p class="text-gray-300">• TechGear: 300% engagement increase through behavioral psychology optimization</p>
+              <p class="text-gray-300">• EcoWear: Transformed from unknown startup to market leader in 12 months</p>
+              <p class="text-gray-300">• Average Client Outcome: 5x improvement in business fundamentals within 6 months</p>
+            </div>
+          </div>
+          
+          <div class="bg-slate-800/50 rounded-xl p-6">
+            <h4 class="text-xl font-bold text-teal mb-4">THE WHISPERED INSIGHTS:</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <p class="text-gray-300">- Why 73% of D2C brands fail (it's not what you think)</p>
+              <p class="text-gray-300">- How AI amplifies human psychology instead of replacing it</p>
+              <p class="text-gray-300">- Which cognitive biases are secretly sabotaging your growth</p>
+              <p class="text-gray-300">- What cultural narratives will dominate the next 3 years</p>
+              <p class="text-gray-300">- How to make your brand psychologically irresistible</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Previous Experience -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="experience-card rounded-xl p-6">
+            <div class="flex items-start space-x-3 mb-4">
+              <span class="text-2xl">🏢</span>
+              <div>
+                <h3 class="text-xl font-bold text-white">CHIEF MARKETING OFFICER</h3>
+                <p class="text-teal">nexG Platforms | Learning to Listen</p>
+                <p class="text-gray-400 text-sm">2020 - 2024 | 4 years | Mumbai, India</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-gray-300">
+              <p>→ Managed ₹50Cr+ budget while learning to hear market whispers</p>
+              <p>→ Achieved 300% revenue growth by listening to what customers weren't saying</p>
+              <p>→ Led 50+ person team through transformation from loud marketing to strategic whispers</p>
+            </div>
+          </div>
+          
+          <div class="experience-card rounded-xl p-6">
+            <div class="flex items-start space-x-3 mb-4">
+              <span class="text-2xl">🏢</span>
+              <div>
+                <h3 class="text-xl font-bold text-white">MARKETING DIRECTOR</h3>
+                <p class="text-teal">FireFly Networks | Psychology-First Marketing Discovery</p>
+                <p class="text-gray-400 text-sm">2018 - 2020 | 2 years | Pune, India</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-gray-300">
+              <p>→ Achieved 250% lead increase by focusing on customer psychology vs. tactics</p>
+              <p>→ First breakthrough: realized technology amplifies human insight, doesn't replace it</p>
+              <p>→ Began systematic study of why some strategies worked while others failed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20 bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold mb-12 text-center">
+        <span class="whisper-text">Skills & Expertise</span>
+      </h2>
+      
+      <div class="flex flex-wrap gap-4 justify-center">
+        <span class="skill-tag">Psychological Pattern Recognition</span>
+        <span class="skill-tag">Cognitive Bias Detection & Correction</span>
+        <span class="skill-tag">Cultural Trend Decoding</span>
+        <span class="skill-tag">AI-Human Psychology Integration</span>
+        <span class="skill-tag">Behavioral Economics Application</span>
+        <span class="skill-tag">Conversion Psychology Optimization</span>
+        <span class="skill-tag">Market Psychology Analysis</span>
+        <span class="skill-tag">Strategic Decision Psychology</span>
+        <span class="skill-tag">Consumer Behavior Prediction</span>
+        <span class="skill-tag">Founder Psychology Coaching</span>
+        <span class="skill-tag">Human-AI Collaborative Intelligence</span>
+        <span class="skill-tag">Psychological Competitive Intelligence</span>
+        <span class="skill-tag">D2C Brand Transformation</span>
+        <span class="skill-tag">Identity-Based Marketing</span>
+        <span class="skill-tag">Cultural Narrative Creation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Posts Section -->
+  <section class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold mb-12 text-center">
+        <span class="whisper-text">Featured Posts</span>
+      </h2>
+      
+      <div class="space-y-8">
+        <!-- Post 1 -->
+        <div class="post-card rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-4">
+            🤫 "The Psychology Secret That Turned a Failing D2C Brand Into a 48-Hour Sellout"
+          </h3>
+          
+          <div class="prose prose-lg prose-invert max-w-none">
+            <p class="text-lg text-gray-300 mb-4">Last month, a sneaker brand was ready to quit.</p>
+            <p class="text-lg text-gray-300 mb-4">2 years of "marketing" with zero results.</p>
+            <p class="text-lg text-gray-300 mb-6">₹15L inventory collecting dust.</p>
+            
+            <p class="text-lg text-white font-semibold mb-4">Then I whispered one psychological insight.</p>
+            <p class="text-lg text-coral font-bold mb-6">48 hours later: Complete sellout.</p>
+            
+            <div class="bg-slate-800/50 rounded-xl p-6 mb-6">
+              <h4 class="text-xl font-bold text-teal mb-4">THE INSIGHT I WHISPERED:</h4>
+              <p class="text-lg text-white italic">"Your customers aren't buying sneakers. They're buying the identity of someone who owns these sneakers."</p>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+              <h4 class="text-xl font-bold text-white">THE PSYCHOLOGY:</h4>
+              <p class="text-lg text-gray-300">Every purchase is an identity statement.</p>
+              <p class="text-lg text-gray-300">Your product is just the vehicle.</p>
+              <p class="text-lg text-gray-300">Your brand is the identity they're trying on.</p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-teal/20 to-coral/20 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-white mb-4">THE WHISPER THAT CHANGED EVERYTHING:</h4>
+              <p class="text-lg text-white font-semibold">Stop selling features. Start selling identity upgrades.</p>
+              <p class="text-lg text-gray-300 mt-4">What identity is your D2C brand helping customers become?</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Post 2 -->
+        <div class="post-card rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-4">
+            🧠 "The AI Whisper: Why Most D2C Brands Are Using AI Wrong (And How to Fix It)"
+          </h3>
+          
+          <div class="prose prose-lg prose-invert max-w-none">
+            <p class="text-lg text-gray-300 mb-4">Everyone's using AI to create more content.</p>
+            <p class="text-lg text-white font-semibold mb-6">I whisper to clients: Use AI to understand minds better.</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div class="bg-red-900/20 rounded-xl p-6">
+                <h4 class="text-lg font-bold text-red-400 mb-4">THE MISTAKE:</h4>
+                <div class="space-y-2 text-gray-300">
+                  <p>→ AI creates content</p>
+                  <p>→ Humans hope it works</p>
+                  <p>→ Results are random</p>
+                </div>
+              </div>
+              
+              <div class="bg-green-900/20 rounded-xl p-6">
+                <h4 class="text-lg font-bold text-green-400 mb-4">THE WHISPER:</h4>
+                <div class="space-y-2 text-gray-300">
+                  <p>→ Humans understand psychology</p>
+                  <p>→ AI amplifies that understanding</p>
+                  <p>→ Results become predictable</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-slate-800/50 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-teal mb-4">THE WHISPER:</h4>
+              <p class="text-lg text-white font-semibold">AI without psychology is just expensive automation.</p>
+              <p class="text-lg text-white font-semibold">Psychology without AI is just limited intuition.</p>
+              <p class="text-lg text-coral font-bold mt-4">Together, they create systematic mind-reading.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Post 3 -->
+        <div class="post-card rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-white mb-4">
+            ✨ "The Cultural Whisper That Turns D2C Brands Into Conversations"
+          </h3>
+          
+          <div class="prose prose-lg prose-invert max-w-none">
+            <p class="text-lg text-gray-300 mb-4">Kylie Jenner whispered something that created $1.2B in value:</p>
+            <p class="text-lg text-white font-semibold mb-6">"This isn't just a lip kit. It's cultural currency."</p>
+            
+            <p class="text-lg text-gray-300 mb-4">Most D2C brands are still shouting features.</p>
+            <p class="text-lg text-coral font-bold mb-6">The winners are whispering culture.</p>
+            
+            <div class="bg-slate-800/50 rounded-xl p-6">
+              <h4 class="text-xl font-bold text-teal mb-4">THE CULTURAL WHISPER METHOD:</h4>
+              <div class="space-y-3">
+                <p class="text-lg text-gray-300"><strong>LISTEN FOR:</strong> What conversation is your customer having with themselves?</p>
+                <p class="text-lg text-gray-300"><strong>WHISPER:</strong> How does your product continue that conversation?</p>
+                <p class="text-lg text-gray-300"><strong>AMPLIFY:</strong> Make your brand part of their identity story</p>
+              </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-teal/20 to-coral/20 rounded-xl p-6 mt-6">
+              <h4 class="text-xl font-bold text-white mb-4">THE WHISPER THAT CHANGED EVERYTHING:</h4>
+              <p class="text-lg text-white font-semibold">Your product is the prop. Your brand is the story. Your customer is the hero.</p>
+              <p class="text-lg text-gray-300 mt-4">What cultural story is your D2C brand helping customers tell?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-teal to-coral">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        Ready to Hear What I Whisper?
+      </h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Join the D2C founders who've discovered the psychological insights that create market leaders.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://www.linkedin.com/company/109058209" target="_blank" class="bg-white text-teal px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <span>Follow Our Company</span>
+        </a>
+        
+        <a href="contact.html" class="bg-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-800 transition-all duration-300 transform hover:scale-105">
+          Start Your Transformation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div class="flex items-center justify-center space-x-3 mb-6">
+          <div class="w-10 h-10 bg-gradient-to-r from-teal to-coral rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xl">O</span>
+          </div>
+          <div>
+            <div class="text-xl font-bold text-white">Outta The Box</div>
+            <div class="text-sm text-gray-400">Marketing</div>
+          </div>
+        </div>
+        
+        <p class="text-gray-400 mb-6">
+          Turning Struggling Brands Into Market Leaders Through AI-Powered Psychology
+        </p>
+        
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="index.html" class="text-gray-400 hover:text-teal transition-colors duration-300">Home</a>
+          <a href="services.html" class="text-gray-400 hover:text-teal transition-colors duration-300">Services</a>
+          <a href="about.html" class="text-gray-400 hover:text-teal transition-colors duration-300">About</a>
+          <a href="case-studies.html" class="text-gray-400 hover:text-teal transition-colors duration-300">Case Studies</a>
+          <a href="blog.html" class="text-gray-400 hover:text-teal transition-colors duration-300">Blog</a>
+          <a href="contact.html" class="text-gray-400 hover:text-teal transition-colors duration-300">Contact</a>
+        </div>
+        
+        <p class="text-gray-500 text-sm">
+          © 2024 Outta The Box Marketing. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+    
+    // Close mobile menu when clicking on links
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
